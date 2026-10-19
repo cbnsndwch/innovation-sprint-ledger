@@ -53,16 +53,30 @@
   const tabsEl = h('div', { class: 'tabs', role: 'tablist' });
   const titleEl = h('div', { class: 'brand-name' }, 'Innovation Sprint');
   const subEl = h('div', { class: 'brand-sub' }, 'Workshop 1 · Opportunity Discovery');
-  const meHost = h('div'), pillHost = h('div'), bannerHost = h('div');
+  const meHost = h('div'), pillHost = h('div'), bannerHost = h('div'), noticeHost = h('div');
   const main = h('main', { class: 'wrap' });
   app.append(
     h('header', { class: 'topbar' }, h('div', { class: 'topbar-in' },
       h('div', { class: 'brand' }, h('div', { class: 'brand-mark' }, 'IS'), h('div', null, titleEl, subEl)),
       tabsEl, h('div', { class: 'spacer' }), meHost,
-      h('button', { class: 'btn sm accent', onclick: () => aiSetup(), title: 'One prompt that sets up Claude, ChatGPT or Grok for your team' }, '✦ Set up your AI'),
-      h('button', { class: 'btn sm', onclick: () => teamShare(), title: 'Send your work to your team, or add theirs' }, '⇄ Share'), pillHost)),
+      h('button', { id: 'ai-btn', class: 'btn sm accent', onclick: () => aiSetup(), title: 'One prompt that sets up Claude, ChatGPT or Grok for your team' }, '✦ Set up your AI'),
+      h('button', { id: 'share-btn', class: 'btn sm', onclick: () => teamShare(), title: 'Send your work to your team, or add theirs' }, '⇄ Share'),
+      h('button', { id: 'tour-btn', class: 'btn sm ghost', onclick: () => startTour(), title: 'A 2-minute walkthrough of the board' }, '? Tour'), pillHost)),
+    noticeHost,
     bannerHost, main);
   LL.storageBar(pillHost);
+  browserNotice();
+
+  // Saving to a folder needs the File System Access API: Chrome or Edge on a laptop. Everywhere else the board still
+  // works, but only in this browser's storage, so say so up front.
+  function browserNotice() {
+    noticeHost.innerHTML = '';
+    if (LL.fsSupported() || LL.lsGet('isl:noticeSeen', false)) return;
+    noticeHost.append(h('div', { class: 'banner' }, h('div', { class: 'banner-in warn', id: 'browser-notice' },
+      h('div', { style: { flex: 1, minWidth: '220px' } }, h('b', null, 'Use Chrome or Edge on a laptop.'), h('div', { class: 'small' },
+        'This browser can’t save to a folder, so your work stays inside this browser only, and AI agents can’t read it. Everything else works, and ⇄ Share still moves your work to your team.')),
+      h('button', { class: 'btn sm ghost', onclick: () => { LL.lsSet('isl:noticeSeen', true); browserNotice(); } }, 'Got it'))));
+  }
 
   function go(id) { tab = id; LL.lsSet('isl:tab', id); render(); window.scrollTo(0, 0); }
   function renderTabs() {
@@ -251,6 +265,8 @@
     if (asModal === true) { modal({ title: 'Sector pack', body, actions: [{ label: 'Close', value: null }] }); return; }
     return h('div', { class: 'canvas' }, h('section', { class: 'card c12 welcome' }, h('h2', null, 'Start with your sector'), body,
       h('ol', { class: 'small', style: { marginTop: '16px' } },
+        h('li', null, h('b', null, 'New here? '), h('button', { class: 'btn sm', onclick: () => startTour() }, '? Take the 2-minute tour'), ' of the board.'),
+        !LL.fsSupported() ? h('li', null, h('b', null, 'Chrome or Edge? '), 'Saving to a folder (and letting AI agents read your work) needs Chrome or Edge on a laptop. In this browser your work is saved inside the browser only.') : null,
         h('li', null, h('b', null, 'Set up your AI: '), 'click ', h('b', null, '✦ Set up your AI'), ' (top right), copy the prompt, and paste it into Claude, ChatGPT or Grok. It walks you through the workshop.'),
         h('li', null, h('b', null, 'Working as a team? '), 'Everyone opens this same file. Use ', h('b', null, '⇄ Share'), ' to send your work to the Team Leader, who adds everyone’s work and shares it back.'))));
   }
@@ -263,7 +279,7 @@
     const memEd = editable({ kind: 'list', get: () => ms, set: v => { const old = Object.fromEntries(t.members.map(m => [m.name, m])); t.members = v.map(n => old[n] || { name: n }); if (!v.includes(t.leader)) t.leader = ''; },
       placeholder: 'Add the 5 or 6 people on your team, one per line.', view: v => h('div', null, h('div', { class: 'chips' }, v.map(n => h('button', { class: 'chip member' + (n === t.leader ? ' primary' : ''), title: 'Make Team Leader', onclick: () => { t.leader = n; saveL(); render(); } }, (n === t.leader ? '★ ' : '') + n))),
         h('div', { class: 'small muted', style: { marginTop: '8px' } }, t.leader ? 'Click a name to change the Team Leader.' : 'Click a name to make them Team Leader.')) });
-    g.append(h('section', { class: 'card c8' }, h('div', { class: 'card-head' }, h('div', { class: 'kicker' }, 'The team'), h('button', { class: 'icon-btn edit-btn', onclick: () => memEd.edit() }, '✎')), nameEd, memEd));
+    g.append(h('section', { class: 'card c8', id: 'tab-team-members' }, h('div', { class: 'card-head' }, h('div', { class: 'kicker' }, 'The team'), h('button', { class: 'icon-btn edit-btn', onclick: () => memEd.edit() }, '✎')), nameEd, memEd));
     g.append(card('c4 leader', 'The Team Leader', h('div', null,
       h('p', { class: 'small', style: { marginTop: 0 } }, 'Talks to the facilitators, checks everyone understood the instructions, watches time and deliverables, and makes sure everyone takes part.'),
       h('p', { class: 'small muted' }, 'Not the boss: can’t impose decisions and has no casting vote.'))));
@@ -882,6 +898,63 @@ Ask me one question at a time (5 in total) about the problem, the customer, the 
     if (v === 'add') LL.addWork();
   }
 
+  // ---------------- guided tour (driver.js, loaded from the CDN only when someone starts it) ----------------
+  const DRIVER = { v: '1.3.1',
+    js: ['https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js', 'sha384-BhR06AMz62Xn0o53z8itVS1vw4JslNckRFgOTa6/Dob0Agdmbbh8Dr9sDO2h18TO'],
+    css: ['https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css', 'sha384-eyrYgcjChmzD338JTHFZssgJHOqqOZbajet8yZpCw8ESroLDi28BarMEKCImNGHC'] };
+  let driverLoad = null;
+  function loadDriver() {
+    if (window.driver && window.driver.js) return Promise.resolve(window.driver.js.driver);
+    return driverLoad = driverLoad || new Promise((res, rej) => {
+      document.head.append(h('link', { rel: 'stylesheet', href: DRIVER.css[0], integrity: DRIVER.css[1], crossorigin: 'anonymous' }));
+      const sc = h('script', { src: DRIVER.js[0], integrity: DRIVER.js[1], crossorigin: 'anonymous' });
+      sc.onload = () => res(window.driver.js.driver);
+      sc.onerror = () => { driverLoad = null; sc.remove(); rej(new Error('offline')); };
+      document.head.append(sc);
+    });
+  }
+  function tourSteps() {
+    const S0 = (el, title, description, t, side) => ({ element: el, tab: t, popover: { title, description, side, align: 'start' } });
+    const steps = [
+      S0(null, 'Welcome to your sprint board', 'This is where your team does Workshop 1: from your sector to one business idea backed by evidence, in 2 hours. This tour takes 2 minutes.', null),
+      S0('.tabs', 'One tab per step', 'Work left to right: read the <b>Brief</b>, set up the <b>Team</b>, research in <b>1 · PESTEL</b> and <b>2 · Sector</b>, then <b>Opportunities</b> and <b>Hypotheses</b>. <b>Evidence</b> and <b>Handoff</b> close the session.', null, 'bottom'),
+      document.querySelector('.me-sel') ? S0('.me-sel', 'Who are you?', 'Pick your name. Everything you add gets it, and the AI setup prompt knows which dimension is yours.', null, 'bottom') : null,
+      S0('#ai-btn', 'Set up your AI', 'Copy one prompt and paste it into Claude, ChatGPT or Grok. It already knows your team, your sector and today’s plan, and it guides you step by step.', null, 'bottom'),
+      S0('#share-btn', 'Share with your team', 'Each person sends their work to the Team Leader (as a file, or as text in WhatsApp or Teams). The Team Leader adds everyone’s work and shares the full board back.', null, 'bottom'),
+      S0('.pill', 'Where your work is saved', LL.fsSupported() ? 'Click here, then <b>Connect a folder</b> to save your work as files on your laptop. Agents like Claude Code, Codex or Cursor can work in that folder too.' : 'In this browser, your work is saved inside the browser only. To save to a folder, open the board in <b>Chrome or Edge</b> on a laptop.', null, 'bottom'),
+      S0('.strip > .card:first-child', 'Workshop 1, step by step', 'Nine steps. Each one turns green when it’s done. Click any of them to jump there.', null, 'bottom'),
+      S0('.timer', 'The sprint clock', 'The Team Leader starts the agenda, and the clock counts down each block. When time’s up, close the block with a decision.', null, 'bottom'),
+      S0('.ev-mini', 'Sources checked by a person', 'What the AI finds arrives <b>unchecked</b>. Open each source yourself. If it says what the finding claims, click <b>I checked it</b>. The jury will ask.', null, 'left'),
+      S0('#tab-team-members', 'Your team', 'Add everyone and click a name to make them Team Leader. Then use <b>Share out</b> to give each person a PESTEL dimension and a sector dimension.', 'team'),
+      S0('.dims > .dim:first-child', 'Research one dimension', '<b>1 · Copy research prompt</b> → paste it into your AI → <b>2 · Paste AI answer</b>. The findings appear here. Then the team stars ★ the key factors.', 'pestel', 'right'),
+      S0('.board-bar', 'From findings to opportunities', 'Each card is one specific problem: who has it, how it’s solved today, and the evidence. The team shortlists the best 2–4.', 'opportunities', 'bottom'),
+      S0('.board-bar', 'Three hypotheses and the matrix', 'Write three ideas, score them on the weighted matrix, ask the AI to <b>challenge</b> them like an investor, then <b>Decide</b> together. Then add the launch market, with data.', 'hypotheses', 'bottom'),
+      S0('.board-bar', 'Every source in one place', 'See what’s still unchecked, what came from the AI, and which findings have no source at all.', 'evidence', 'bottom'),
+      S0('.callout', 'Close the session', 'Log your decisions and the handoff. <b>Copy Workshop 2 brief</b> takes everything into the Go-to-Market session. <b>Copy jury drill prompt</b> lets you practise answering the jury.', 'handoff', 'bottom'),
+      S0(null, 'You’re ready', S() ? 'Start on the <b>Team</b> tab, or click <b>✦ Set up your AI</b>. You can replay this tour any time with <b>? Tour</b>.' : 'First, pick your sector on the <b>Brief</b> tab. Then click <b>✦ Set up your AI</b>. You can replay this tour any time with <b>? Tour</b>.', 'brief')
+    ].filter(Boolean);
+    return steps;
+  }
+  async function startTour() {
+    let drv;
+    try { drv = await loadDriver(); } catch { toast('The tour needs an internet connection. Everything else works offline.', 4500); return; }
+    if (drawer.classList.contains('open')) closeDrawer();
+    const steps = tourSteps(), start = tab;
+    const hop = (i, dir) => () => {
+      const next = steps[i + dir]; const want = next && next.tab;
+      if (want && want !== tab) go(want);
+      setTimeout(() => dir > 0 ? d.moveNext() : d.movePrevious(), 60);
+    };
+    const d = drv({
+      showProgress: true, allowClose: true, overlayOpacity: 0.55, smoothScroll: true, popoverClass: 'isl-tour', stagePadding: 6,
+      nextBtnText: 'Next →', prevBtnText: '← Back', doneBtnText: 'Done', progressText: '{{current}} of {{total}}',
+      steps: steps.map((st, i) => ({ element: st.element || undefined, popover: Object.assign({}, st.popover, { onNextClick: i < steps.length - 1 ? hop(i, 1) : () => d.destroy(), onPrevClick: i > 0 ? hop(i, -1) : undefined }) })),
+      onDestroyed: () => { LL.lsSet('isl:toured', true); if (tab !== start && start === 'brief') go('brief'); }
+    });
+    d.drive();
+    window.__tour = d;
+  }
+
   // ---------------- set up your AI ----------------
   const skillNames = () => [...new Set(Object.keys(SKILL_FILES).map(k => k.split('/')[0]))];
   const skillBody = (name) => String(SKILL_FILES[name + '/SKILL.md'] || '').replace(/^---[\s\S]*?---\s*/, '');
@@ -978,5 +1051,5 @@ START NOW: greet me in one line. Say where we are in the agenda and what my next
     needReconnect: (name, reconnect, cache) => { LL.reconnectBanner(bannerHost, name, reconnect, cache); render(); }
   }).catch(e => { console.error(e); toast('Startup problem: ' + e.message); });
   render();
-  window.SprintApp = { render, researchPrompt, oppPrompt, hypPrompt, challengePrompt, summaryMd, w2Prompt, matrixScore, parseAiJson, setupPrompt, writeAgentFolder, SKILL_FILES };
+  window.SprintApp = { startTour, tourSteps, render, researchPrompt, oppPrompt, hypPrompt, challengePrompt, summaryMd, w2Prompt, matrixScore, parseAiJson, setupPrompt, writeAgentFolder, SKILL_FILES };
 })();

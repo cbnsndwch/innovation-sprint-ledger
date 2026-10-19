@@ -1,16 +1,26 @@
-# Publishes sprint.html (and the skill zips) as the "latest" release, so the README's
-# download link (releases/latest/download/sprint.html) is always a one-click download.
+# On every push to main that changes the board:
+#   1. publishes sprint.html (and the skill zips) as the "latest" release → the README's one-click download link
+#   2. deploys the same sprint.html to GitHub Pages → https://cbnsndwch.github.io/innovation-sprint-ledger/
+# Both are the same static file. Nothing runs on a server.
 name: Publish sprint.html
 on:
   push:
     branches: [main]
-    paths: ["sprint.html", "src/**", "sectors/**", "skills/**", "START.md"]
+    paths: ["sprint.html", "src/**", "sectors/**", "skills/**", "START.md", ".github/workflows/publish.yml"]
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: publish
+  cancel-in-progress: true
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
@@ -22,4 +32,17 @@ jobs:
           gh release delete latest --yes --cleanup-tag || true
           gh release create latest out/sprint.html out/skills-zip/*.zip out/innovation-sprint-ledger-kit.zip \
             --title "Innovation Sprint Ledger" --latest \
-            --notes "Students: download **sprint.html** below and open it in Chrome or Edge. That's the whole tool."
+            --notes "Students: download **sprint.html** below and open it in Chrome or Edge, or use it online at https://cbnsndwch.github.io/innovation-sprint-ledger/"
+      - name: Build the Pages site
+        run: |
+          mkdir -p out/site
+          cp out/sprint.html out/site/index.html
+          cp out/sprint.html out/site/sprint.html
+          cp START.md out/site/START.md
+          touch out/site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out/site
+      - id: deploy
+        uses: actions/deploy-pages@v4

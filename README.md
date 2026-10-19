@@ -8,13 +8,21 @@ One file. No install, no account, no server. Your AI does the setup.
 
 ## 🚀 Students: start here
 
-### 1 · Download the board
+> [!IMPORTANT]
+> **Use Google Chrome or Microsoft Edge on a laptop.** Saving your work to a folder (so AI agents can read it) only works in those two browsers. Safari, Firefox and phones can open the board, but your work then stays inside that browser only.
 
-### **[⬇ Download sprint.html](../../releases/latest/download/sprint.html)**
+### 1 · Open the board
 
-Open it from your Downloads folder. **Chrome or Edge** works best (Safari and Firefox work too).
+Pick one. It's the same board either way.
 
-<sub>If the link doesn't work: open [`sprint.html`](sprint.html) above and click the **Download raw file** button (⬇) at the top right.</sub>
+| | |
+|---|---|
+| 🌐 **Use it online** | **[cbnsndwch.github.io/innovation-sprint-ledger](https://cbnsndwch.github.io/innovation-sprint-ledger/)** |
+| ⬇ **Or download it** | **[Download sprint.html](../../releases/latest/download/sprint.html)**, then open it from your Downloads folder. It also works offline. |
+
+<sub>Your work is saved in the browser where you opened the board, so keep using the same one. The online board and the downloaded file keep separate copies. To move work between them, use **⇄ Share**.</sub>
+
+New here? Click **? Tour** (top right) for a 2-minute walkthrough of the board.
 
 ### 2 · Pick your sector and your name
 
@@ -68,7 +76,9 @@ Nothing gets lost or duplicated. Adding the same work twice is harmless.
 
 | | |
 |---|---|
-| My work disappeared | It's saved in the browser you used. Open the same file in the **same browser**. To be safe, **Share my work** now and then, and keep the file. |
+| My work disappeared | It's saved in the browser you used, and the online board and the downloaded file keep separate copies. Go back to the **same browser** and the **same board** (online or file). To be safe, **Share my work** now and then, and keep the file. |
+| There's no "Connect a folder" / a yellow notice says to use Chrome or Edge | Your browser can't save to folders. Switch to **Chrome or Edge on a laptop**. Until then, everything else works, and **⇄ Share** still moves your work. |
+| The tour doesn't start | It needs an internet connection. Everything else works offline. |
 | The AI's answer didn't import | Ask it: *"Finish with the JSON block from the prompt."* Then paste the whole answer again. |
 | The AI invented a source | Delete it, or keep the finding with no source. The board flags findings with no source. |
 | I use Claude Code, Codex, Cursor or Grok | **✦ Set up your AI → Connect a folder and set it up**. Open that folder in your agent and say *"Read AGENTS.md and get me started."* |
@@ -77,7 +87,8 @@ Nothing gets lost or duplicated. Adding the same work twice is harmless.
 <details>
 <summary><b>🇪🇸 En español</b></summary>
 
-1. **[Descarga sprint.html](../../releases/latest/download/sprint.html)** y ábrelo (mejor en Chrome o Edge).
+0. **Usa Google Chrome o Microsoft Edge en un portátil.** Solo en esos navegadores se puede guardar el trabajo en una carpeta.
+1. Abre el tablero **[en línea](https://cbnsndwch.github.io/innovation-sprint-ledger/)**, o **[descarga sprint.html](../../releases/latest/download/sprint.html)** y ábrelo. ¿Primera vez? Pulsa **? Tour**.
 2. En la pestaña **Brief**, elige tu sector. Arriba a la derecha, en **Who are you?**, elige tu nombre.
 3. Pulsa **✦ Set up your AI → Copy setup prompt** y pégalo en un chat nuevo de Claude, ChatGPT o Grok. Tu IA ya conoce a tu equipo, tu sector y la agenda, y te guía paso a paso.
 
@@ -100,7 +111,7 @@ bun kit.ts sector packs/*.docx   # each Sector Exploration Pack → sectors/<id>
 bun run build                     # bundles every sector into sprint.html
 ```
 
-Push to `main`, and the [Publish workflow](.github/workflows/publish.yml) attaches the new `sprint.html` and the skill zips to the **latest** release, which is what the download link above points to. Students can also drop a pack `.docx` straight onto the Brief tab; the board reads it in the browser.
+Push to `main`, and the [Publish workflow](.github/workflows/publish.yml) updates both the **online board** (GitHub Pages) and the **latest** release, which is what the download link above points to. Students can also drop a pack `.docx` straight onto the Brief tab; the board reads it in the browser.
 
 **Demo:** [`example/team-example/`](example/team-example) is a fictional team that finished Workshop 1 in Tourism & Hospitality. Download the repo, open `sprint.html`, choose **Connect a folder**, and pick that folder.
 

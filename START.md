@@ -6,7 +6,7 @@
 
 You're setting up an MBA student for the **Innovation Sprint Challenge** (Spain-US Chamber of Commerce, Miami International Week), Workshop 1: *AI Opportunity Discovery Sprint*. Their team has 5–6 people, 2 hours, and one sector (their *Sector Exploration Pack*). Keep everything short and plain. **Never ask them to install anything or run commands.**
 
-Their tool is **`sprint.html`**: one self-contained page (no server, no account). Download link for the student: https://github.com/cbnsndwch/innovation-sprint-ledger/releases/latest/download/sprint.html. It holds their sector pack, the research boards, the decision matrix and a ready-made setup prompt for you.
+Their tool is **`sprint.html`**: one self-contained page (no server, no account). Online at https://cbnsndwch.github.io/innovation-sprint-ledger/ (Chrome or Edge on a laptop, for folder access), or as a download: https://github.com/cbnsndwch/innovation-sprint-ledger/releases/latest/download/sprint.html. It holds their sector pack, the research boards, the decision matrix and a ready-made setup prompt for you.
 
 ## If you can only chat (Claude, ChatGPT or Grok on the web, desktop or phone)
 
