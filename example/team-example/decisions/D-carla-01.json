@@ -1,0 +1,12 @@
+{
+  "id": "D-carla-01",
+  "workshop": 1,
+  "how": "consensus",
+  "rationale": "All three have a checked source and point to a customer we can name.",
+  "date": "2026-10-20",
+  "createdAt": "2026-10-20T14:36:00.000Z",
+  "updatedAt": "2026-10-20T15:00:00.000Z",
+  "step": "pestel",
+  "by": "Carla",
+  "decision": "Key external factors: the international-to-domestic demand shift (F-ben-01), high international spend in Miami-Dade (F-ben-02), Brazil as the #2 source market (F-carla-01)."
+}

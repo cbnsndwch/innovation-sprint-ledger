@@ -1,0 +1,16 @@
+{
+  "id": "F-ana-02",
+  "sprint": "pestel",
+  "dimension": "legal",
+  "author": "Ana",
+  "title": "Short-term rental rules differ city by city in Florida",
+  "detail": "",
+  "whoAffected": "Hosts, platforms, guests",
+  "implication": "Compliance work is local and manual: a possible B2B friction.",
+  "sources": [],
+  "origin": "ai",
+  "key": false,
+  "notes": "Source to find: city ordinances (Miami Beach, Miami).",
+  "createdAt": "2026-10-20T14:12:00.000Z",
+  "updatedAt": "2026-10-20T14:30:00.000Z"
+}

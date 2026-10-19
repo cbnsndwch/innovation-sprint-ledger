@@ -1,0 +1,16 @@
+{
+  "id": "F-ana-03",
+  "sprint": "sector",
+  "dimension": "segments",
+  "author": "Ana",
+  "title": "Cruise passengers often have hours in Miami before boarding or after landing",
+  "detail": "",
+  "whoAffected": "Cruise passengers flying in on embarkation day or out after disembarking",
+  "implication": "Dead time with luggage: a clear, findable customer.",
+  "sources": [],
+  "origin": "team",
+  "key": false,
+  "notes": "Source to find: cruise line check-in windows and typical flight times. Diego will check two cruise lines' sites.",
+  "createdAt": "2026-10-20T14:48:00.000Z",
+  "updatedAt": "2026-10-20T15:05:00.000Z"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "F-elena-01",
+  "sprint": "pestel",
+  "dimension": "environmental",
+  "author": "Elena",
+  "title": "Hurricane season concentrates disruption risk from June to November",
+  "detail": "",
+  "whoAffected": "Cruise lines, hotels, travelers with fixed dates",
+  "implication": "Rebooking and refunds are a recurring pain.",
+  "sources": [],
+  "origin": "team",
+  "key": false,
+  "notes": "Source to find: NOAA season data; insurer claims data.",
+  "createdAt": "2026-10-20T14:12:00.000Z",
+  "updatedAt": "2026-10-20T14:30:00.000Z"
+}

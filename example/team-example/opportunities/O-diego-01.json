@@ -1,0 +1,19 @@
+{
+  "id": "O-diego-01",
+  "title": "Multi-marketplace booking chaos for small operators",
+  "friction": "Operators re-enter bookings from several marketplaces into one calendar by hand.",
+  "who": "Independent tour and experience operators in Miami-Dade",
+  "howSolvedToday": "Spreadsheets, booking software that's built for bigger operators.",
+  "whyNow": "Discovery moving to marketplaces and AI.",
+  "evidence": "F-diego-02 (unchecked), F-elena-02.",
+  "findingIds": [
+    "F-diego-02",
+    "F-elena-02"
+  ],
+  "sources": [],
+  "author": "Diego",
+  "origin": "ai",
+  "shortlisted": true,
+  "createdAt": "2026-10-20T15:08:00.000Z",
+  "updatedAt": "2026-10-20T15:12:00.000Z"
+}

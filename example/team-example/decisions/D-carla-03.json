@@ -1,0 +1,12 @@
+{
+  "id": "D-carla-03",
+  "workshop": 1,
+  "how": "consensus",
+  "rationale": "Strongest evidence base and a customer we can find in one place. H-diego-01 rests on sources we haven't found.",
+  "date": "2026-10-20",
+  "createdAt": "2026-10-20T15:42:00.000Z",
+  "updatedAt": "2026-10-20T15:00:00.000Z",
+  "step": "hypothesis",
+  "by": "Carla",
+  "decision": "Chose H-ana-01 · PortDay (matrix 79/100)."
+}

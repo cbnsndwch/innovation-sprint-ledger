@@ -1,0 +1,18 @@
+{
+  "id": "O-elena-01",
+  "title": "Hurricane-season rebooking",
+  "friction": "Fixed-date travelers scramble to rebook when storms hit.",
+  "who": "Leisure travelers June–November",
+  "howSolvedToday": "Call centers, travel insurance claims.",
+  "whyNow": "",
+  "evidence": "F-elena-01 (source to find).",
+  "findingIds": [
+    "F-elena-01"
+  ],
+  "sources": [],
+  "author": "Elena",
+  "origin": "team",
+  "shortlisted": false,
+  "createdAt": "2026-10-20T15:08:00.000Z",
+  "updatedAt": "2026-10-20T15:12:00.000Z"
+}

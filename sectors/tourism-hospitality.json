@@ -1,0 +1,299 @@
+{
+  "schema": "sector-pack/1",
+  "id": "tourism-hospitality",
+  "name": "Tourism & Hospitality",
+  "label": "SECTOR EXPLORATION PACK | WORKSHOP 1",
+  "referenceMarket": "United States (Miami/Florida as a reference case; national-scope ideas are welcome)",
+  "intro": "This Pack gives you a common starting point: vocabulary, structure and verified figures. It does not define the problem, customer or solution. That is your job.",
+  "definition": "Businesses that move, host, entertain and serve people traveling away from home for leisure, business or events, plus the technology and services that power them.",
+  "inside": [
+    "Lodging (hotels, resorts, short-term rentals)",
+    "Cruises",
+    "Attractions, tours and experiences",
+    "Events, meetings and ticketing",
+    "Travel distribution and booking",
+    "B2B technology and services serving all of the above (software, payments, data, staffing)"
+  ],
+  "outside": [
+    "Airlines as flight operators",
+    "Independent restaurants with no tourism link",
+    "Real estate development and construction"
+  ],
+  "players": [
+    {
+      "type": "Asset-based lodging and cruise",
+      "howMoney": "Owns or operates the asset: room revenue, food & beverage, on-board spend, spa, ancillary fees. High fixed costs, seasonal demand.",
+      "examples": "Hotels and resorts (Fontainebleau Miami Beach, The Biltmore), Carnival, Royal Caribbean"
+    },
+    {
+      "type": "Asset-light hotel brands",
+      "howMoney": "Franchise and management fees (% of revenue or profit), loyalty programs and co-branded cards. Owners carry the real estate.",
+      "examples": "Marriott, Hilton, Hyatt"
+    },
+    {
+      "type": "Online travel agencies and metasearch",
+      "howMoney": "Commission or take rate per booking; advertising and pay-per-click from suppliers.",
+      "examples": "Booking.com, Expedia, Kayak, Tripadvisor"
+    },
+    {
+      "type": "Vacation rental and peer-to-peer platforms",
+      "howMoney": "Two-sided marketplace: service fees charged to guests and/or hosts per stay.",
+      "examples": "Airbnb, Vrbo"
+    },
+    {
+      "type": "Experience marketplaces, tour operators and DMCs",
+      "howMoney": "Commission on bookings, markup on packages, supplier fees. Destination management companies sell local ground services to groups and brands.",
+      "examples": "Viator, GetYourGuide, Fever, Klook, local tour operators"
+    },
+    {
+      "type": "Travel advisors and corporate travel",
+      "howMoney": "Service fees and supplier commissions; subscription or transaction fees in managed business travel.",
+      "examples": "Independent advisors, Amex GBT, Navan"
+    },
+    {
+      "type": "Ticketing and events",
+      "howMoney": "Per-ticket service fees, dynamic pricing, software subscriptions for organizers, sponsorship.",
+      "examples": "Ticketmaster, Eventbrite, SeatGeek"
+    },
+    {
+      "type": "B2B technology",
+      "howMoney": "SaaS subscription (per room, per user), payment and transaction fees, usage-based pricing. Includes property management, booking engines, POS, revenue management, channel managers and distribution.",
+      "examples": "Cloudbeds, Mews, Oracle Opera, Toast, Sabre, Amadeus, FareHarbor"
+    }
+  ],
+  "playersNote": "Illustrative map, not exhaustive. Examples are well-known players to help you recognize each model, not a recommendation to copy them.",
+  "revenueModels": [
+    "asset-based (own and operate)",
+    "asset-light (franchise / management fees)",
+    "commission or take rate",
+    "SaaS subscription",
+    "transaction and payment fees",
+    "advertising and lead generation",
+    "freemium with premium upsell",
+    "membership and loyalty (including co-branded cards)"
+  ],
+  "valueChain": {
+    "note": "One possible lens. The chain changes by segment (cruise, events, rentals, B2B software). Map the one that fits your area of interest and decide where value is created and captured.",
+    "steps": [
+      {
+        "name": "Inspire and plan",
+        "actors": "Social media, creators, destination marketing bodies (VISIT FLORIDA, GMCVB), search and AI assistants"
+      },
+      {
+        "name": "Search and compare",
+        "actors": "Metasearch, OTAs, review sites, maps, supplier websites"
+      },
+      {
+        "name": "Book and pay",
+        "actors": "Direct hotel sites, OTAs, advisors, ticketing platforms, payment providers"
+      },
+      {
+        "name": "Travel and arrive",
+        "actors": "Airlines, cruise terminals, rail, ride-hailing, car rental, airports"
+      },
+      {
+        "name": "Stay and experience",
+        "actors": "Hotels, rentals, ships, attractions, tours, restaurants, events; on-site tech (PMS, POS)"
+      },
+      {
+        "name": "Share and return",
+        "actors": "Reviews, loyalty programs, CRM, post-trip marketing, repeat booking"
+      }
+    ],
+    "enabling": [
+      "supply owners and operators",
+      "labor",
+      "property and revenue-management software",
+      "payments",
+      "data and distribution (GDS, channel managers)",
+      "regulation and insurance"
+    ],
+    "enablingLabel": "Enabling layer across all steps"
+  },
+  "keyFigures": [
+    {
+      "level": "U.S.",
+      "figure": "$1.35 trillion total travel spending in 2025; domestic travelers account for $1.2 trillion (87%) across about 2.4 billion domestic trips",
+      "source": "U.S. Travel Association, 2025"
+    },
+    {
+      "level": "U.S.",
+      "figure": "15 million jobs supported by travel; $3.0 trillion in total economic output",
+      "source": "U.S. Travel Association, 2025"
+    },
+    {
+      "level": "U.S.",
+      "figure": "68.3 million international arrivals in 2025 vs. 72.4 million in 2024; NTTO projects about 70.5 million in 2026",
+      "source": "NTTO (U.S. Dept. of Commerce), Mar. 2026"
+    },
+    {
+      "level": "U.S.",
+      "figure": "International visitors spend about $173 billion (2025 estimate), the largest U.S. services export; overseas visitors can spend up to 8x more per trip than domestic travelers",
+      "source": "U.S. Travel Association, 2025"
+    },
+    {
+      "level": "U.S. cruise",
+      "figure": "37.2 million cruise passengers worldwide in 2025, of which 20.6 million sourced from the U.S.; the Caribbean is about 43% of global deployments",
+      "source": "CLIA, State of the Cruise Industry 2026"
+    },
+    {
+      "level": "Florida",
+      "figure": "143.3 million visitors in 2025 (preliminary): 131.1M domestic, 9.3M overseas, 2.9M Canadian. Brazil is now the #2 international source",
+      "source": "VISIT FLORIDA, 2025"
+    },
+    {
+      "level": "Miami-Dade",
+      "figure": "28.3 million visitors and $22.7 billion in visitor spending in 2025 (+4.1% vs. 2024); $32.2 billion total economic impact",
+      "source": "GMCVB, June 2026"
+    },
+    {
+      "level": "Miami-Dade",
+      "figure": "216,000+ tourism jobs (about 10% of county employment); lodging is $10.4 billion, nearly half of visitor spending",
+      "source": "GMCVB, June 2026"
+    },
+    {
+      "level": "Miami-Dade",
+      "figure": "International visitors spend over $1,150 per person per trip. Top markets: Colombia, Brazil, UK, Canada, Mexico, Argentina, Spain, Italy, Germany, France",
+      "source": "GMCVB, June 2026"
+    },
+    {
+      "level": "PortMiami",
+      "figure": "Passed 10 million cruise passengers in fiscal year 2026 (Oct. 2025 to Sep. 2026), above the prior record of 8.56 million",
+      "source": "PortMiami, Sep. 2026"
+    }
+  ],
+  "figuresNote": "Some figures are preliminary or estimates. Always check the latest release and cite the source and year in your own work.",
+  "challenge": "Travel and hospitality is one of the largest consumer and business sectors in the U.S., yet demand is shifting between domestic and international travelers, and incumbents, platforms and software providers all compete for the same traveler dollar. Identify one specific, evidence-backed friction experienced by a clearly defined customer (a traveler, an operator or a business) in this sector in the U.S., and show why it is worth solving now. Choose an initial launch market (for example Miami/Florida or another U.S. region) and justify your choice with data.",
+  "pestelNote": "Sprint 1, PESTEL: each team member takes one dimension. The figures above are a starting point only; look for what is changing and who it affects.",
+  "sprint2Questions": [
+    {
+      "dimension": "Ecosystem and actors",
+      "question": "Which types of companies capture most of the value in your segment, and who is entering or leaving?"
+    },
+    {
+      "dimension": "Value chain",
+      "question": "At which step of the chain do travelers or operators lose time, money or trust? Who captures the margin?"
+    },
+    {
+      "dimension": "Processes and frictions",
+      "question": "What do people still do manually, or work around, today? What evidence shows it matters (data, reviews, reports)?"
+    },
+    {
+      "dimension": "Existing solutions and competition",
+      "question": "How is the problem solved today, and by whom? What do those solutions fail to do?"
+    },
+    {
+      "dimension": "Segments and needs",
+      "question": "Which customer is most affected: leisure, business, international, domestic, local operator? How big is that group?"
+    },
+    {
+      "dimension": "Business models",
+      "question": "Which revenue model fits your idea (commission, subscription, SaaS, fees)? Who pays, and why?"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "ADR",
+      "def": "Average Daily Rate: average room revenue per occupied room"
+    },
+    {
+      "term": "Occupancy",
+      "def": "Share of available rooms sold in a period"
+    },
+    {
+      "term": "RevPAR",
+      "def": "Revenue per available room (ADR × occupancy)"
+    },
+    {
+      "term": "Take rate",
+      "def": "Share of a transaction a platform keeps as revenue"
+    },
+    {
+      "term": "OTA",
+      "def": "Online travel agency (e.g., Booking.com, Expedia)"
+    },
+    {
+      "term": "DMC",
+      "def": "Destination management company: local ground services for groups"
+    },
+    {
+      "term": "PMS",
+      "def": "Property management system: hotel core software (reservations, billing)"
+    },
+    {
+      "term": "GDS",
+      "def": "Global distribution system linking suppliers with travel sellers"
+    },
+    {
+      "term": "CAC / LTV",
+      "def": "Customer acquisition cost / lifetime value of a customer"
+    },
+    {
+      "term": "Seasonality",
+      "def": "Predictable swings in demand across the year"
+    }
+  ],
+  "sources": [
+    {
+      "group": "Data",
+      "items": [
+        "NTTO (trade.gov/travel-and-tourism)",
+        "U.S. Travel Association (ustravel.org/research)",
+        "VISIT FLORIDA research",
+        "GMCVB (miamiandbeaches.com)",
+        "PortMiami",
+        "CLIA",
+        "U.S. Bureau of Labor Statistics",
+        "U.S. Census Bureau"
+      ]
+    },
+    {
+      "group": "Industry analysis",
+      "items": [
+        "Skift",
+        "Phocuswright",
+        "CoStar/STR",
+        "Hospitality Net",
+        "company 10-K filings and investor presentations"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "key": "definition",
+      "title": "Sector Definition and Boundaries"
+    },
+    {
+      "key": "players",
+      "title": "Who Is in the Sector and How They Make Money"
+    },
+    {
+      "key": "valueChain",
+      "title": "Example Value Chain: the Traveler Journey"
+    },
+    {
+      "key": "keyFigures",
+      "title": "Key Figures"
+    },
+    {
+      "key": "challenge",
+      "title": "Exploration Challenge"
+    },
+    {
+      "key": "questions",
+      "title": "Guiding Questions for Your Research"
+    },
+    {
+      "key": "glossary",
+      "title": "Quick Glossary"
+    },
+    {
+      "key": "sources",
+      "title": "Reliable Sources to Start"
+    }
+  ],
+  "extra": [],
+  "outsideNote": "They can appear as partners or channels, but are not the core of your idea.",
+  "sourceFile": "Sector_Exploration_Pack_Tourism_Hospitality.docx",
+  "parsedAt": "2026-10-19T19:02:51.421Z"
+}

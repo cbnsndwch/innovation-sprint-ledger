@@ -1,0 +1,12 @@
+{
+  "id": "D-carla-02",
+  "workshop": 1,
+  "how": "consensus",
+  "rationale": "O-elena-01 has no source yet.",
+  "date": "2026-10-20",
+  "createdAt": "2026-10-20T15:12:00.000Z",
+  "updatedAt": "2026-10-20T15:00:00.000Z",
+  "step": "sector",
+  "by": "Carla",
+  "decision": "Shortlisted O-ana-01 (cruise-day dead time), O-carla-01 (Portuguese-language gap) and O-diego-01 (multi-marketplace bookings) for the hypotheses."
+}

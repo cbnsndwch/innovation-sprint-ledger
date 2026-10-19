@@ -1,0 +1,16 @@
+{
+  "id": "F-diego-02",
+  "sprint": "sector",
+  "dimension": "frictions",
+  "author": "Diego",
+  "title": "Small tour operators juggle bookings across several marketplaces by hand",
+  "detail": "",
+  "whoAffected": "Independent tour and experience operators",
+  "implication": "Double bookings and admin time. A B2B tool could save hours a week.",
+  "sources": [],
+  "origin": "ai",
+  "key": false,
+  "notes": "Source to find: operator reviews or interviews. The AI answer cited a report we couldn't locate.",
+  "createdAt": "2026-10-20T14:48:00.000Z",
+  "updatedAt": "2026-10-20T15:05:00.000Z"
+}

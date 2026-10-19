@@ -1,0 +1,12 @@
+{
+  "name": "innovation-sprint-ledger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local-first team ledger, sprint board, and agent skills for the Innovation Sprint Challenge: AI-assisted opportunity discovery with evidence a jury can check.",
+  "license": "MIT",
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "package": "bun scripts/package.ts",
+    "skills": "bun kit.ts skills"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "O-ana-01",
+  "title": "Dead time with luggage around cruise day",
+  "friction": "Passengers arrive hours before boarding (or leave the ship hours before their flight) with nothing to do and their luggage in tow.",
+  "who": "Cruise passengers flying into or out of Miami on sailing days",
+  "howSolvedToday": "Waiting at the terminal or airport; a few hotels hold bags; ad-hoc taxis.",
+  "whyNow": "Record PortMiami volume (10M+ in FY2026).",
+  "evidence": "F-ben-03 record volume; F-ana-03 dead time (source to find).",
+  "findingIds": [
+    "F-ben-03",
+    "F-ana-03"
+  ],
+  "sources": [],
+  "author": "Ana",
+  "origin": "team",
+  "shortlisted": true,
+  "createdAt": "2026-10-20T15:08:00.000Z",
+  "updatedAt": "2026-10-20T15:12:00.000Z"
+}

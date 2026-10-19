@@ -1,0 +1,26 @@
+{
+  "id": "F-carla-01",
+  "sprint": "pestel",
+  "dimension": "social",
+  "author": "Carla",
+  "title": "Brazil is now Florida's #2 international source market",
+  "detail": "Florida had 143.3M visitors in 2025 (preliminary): 9.3M overseas, 2.9M Canadian.",
+  "whoAffected": "Portuguese-speaking travelers and the businesses that serve them",
+  "implication": "Language and payment expectations differ from the Spanish-speaking markets Miami already serves well.",
+  "sources": [
+    {
+      "label": "VISIT FLORIDA, 2025: 143.3 million visitors in 2025 (preliminary): 131.1M domestic, 9.3M overseas, 2.9M Canadian. Brazil is now the #2 international source",
+      "url": "",
+      "year": "2025",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    }
+  ],
+  "origin": "team",
+  "key": true,
+  "notes": "Ask: how many Brazilian visitors come to Miami-Dade specifically? Source to find (GMCVB).",
+  "createdAt": "2026-10-20T14:12:00.000Z",
+  "updatedAt": "2026-10-20T14:30:00.000Z"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "F-ben-04",
+  "sprint": "sector",
+  "dimension": "models",
+  "author": "Ben",
+  "title": "Operator software sells on subscription; marketplaces on commission",
+  "detail": "SaaS per room or user, payment and transaction fees, usage-based pricing (pack, B2B technology row).",
+  "whoAffected": "Whoever we sell to",
+  "implication": "Consumer ideas probably need commission or fees; operator tools need subscription.",
+  "sources": [
+    {
+      "label": "Sector Exploration Pack: revenue models",
+      "url": "",
+      "year": "2026",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    }
+  ],
+  "origin": "team",
+  "key": false,
+  "notes": "",
+  "createdAt": "2026-10-20T14:48:00.000Z",
+  "updatedAt": "2026-10-20T15:05:00.000Z"
+}

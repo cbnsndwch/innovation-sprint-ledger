@@ -1,0 +1,44 @@
+{
+  "id": "H-carla-01",
+  "order": 2,
+  "title": "Olá Miami",
+  "customer": "Miami hotels with a growing share of Brazilian guests (the guests use it, the hotel pays)",
+  "problem": "Brazilian guests get service built for English and Spanish speakers.",
+  "solution": "A Portuguese-language concierge on WhatsApp, white-labeled for each hotel, with bookable local partners.",
+  "valueProp": "Higher guest satisfaction and on-property spend from a fast-growing segment, with no new staff.",
+  "revenueModel": "Monthly subscription per hotel, plus a commission on bookings.",
+  "businessModel": "B2B2C",
+  "whyNow": "Brazil is now Florida's #2 source market.",
+  "launchMarket": "Miami Beach hotels",
+  "launchMarketWhy": "",
+  "openQuestions": [
+    "How many Brazilian guests does a typical Miami Beach hotel get? (source to find)"
+  ],
+  "opportunityIds": [
+    "O-carla-01"
+  ],
+  "sources": [
+    {
+      "label": "VISIT FLORIDA, 2025: 143.3 million visitors in 2025 (preliminary): 131.1M domestic, 9.3M overseas, 2.9M Canadian. Brazil is now the #2 international source",
+      "url": "",
+      "year": "2025",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    }
+  ],
+  "scores": {
+    "evidence": 3,
+    "customer": 4,
+    "size": 3,
+    "now": 4,
+    "pay": 3,
+    "feasible": 3
+  },
+  "author": "Carla",
+  "origin": "team",
+  "archived": false,
+  "createdAt": "2026-10-20T15:15:00.000Z",
+  "updatedAt": "2026-10-20T15:40:00.000Z"
+}

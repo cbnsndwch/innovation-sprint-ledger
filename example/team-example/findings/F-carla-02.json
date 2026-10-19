@@ -1,0 +1,35 @@
+{
+  "id": "F-carla-02",
+  "sprint": "sector",
+  "dimension": "valuechain",
+  "author": "Carla",
+  "title": "Lodging captures nearly half of Miami-Dade visitor spending",
+  "detail": "$10.4B of $22.7B in 2025. 216,000+ tourism jobs, about 10% of county employment.",
+  "whoAffected": "Hotels; everyone else competes for the other half",
+  "implication": "Margin sits with lodging. Experiences and services fight over what's left.",
+  "sources": [
+    {
+      "label": "GMCVB, June 2026: 216,000+ tourism jobs (about 10% of county employment); lodging is $10.4 billion, nearly half of visitor spending",
+      "url": "",
+      "year": "2026",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    },
+    {
+      "label": "GMCVB, June 2026: 28.3 million visitors and $22.7 billion in visitor spending in 2025 (+4.1% vs. 2024); $32.2 billion total economic impact",
+      "url": "",
+      "year": "2026",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    }
+  ],
+  "origin": "team",
+  "key": false,
+  "notes": "",
+  "createdAt": "2026-10-20T14:48:00.000Z",
+  "updatedAt": "2026-10-20T15:05:00.000Z"
+}

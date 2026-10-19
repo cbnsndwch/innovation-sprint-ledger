@@ -1,0 +1,25 @@
+# Publishes sprint.html (and the skill zips) as the "latest" release, so the README's
+# download link (releases/latest/download/sprint.html) is always a one-click download.
+name: Publish sprint.html
+on:
+  push:
+    branches: [main]
+    paths: ["sprint.html", "src/**", "sectors/**", "skills/**", "START.md"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun run package
+      - name: Replace the "latest" release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest --yes --cleanup-tag || true
+          gh release create latest out/sprint.html out/skills-zip/*.zip out/innovation-sprint-ledger-kit.zip \
+            --title "Innovation Sprint Ledger" --latest \
+            --notes "Students: download **sprint.html** below and open it in Chrome or Edge. That's the whole tool."

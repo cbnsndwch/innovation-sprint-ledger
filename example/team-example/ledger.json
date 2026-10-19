@@ -1,0 +1,160 @@
+{
+  "schema": "innovation-sprint-ledger/1",
+  "team": {
+    "name": "Example Team (fictional)",
+    "number": "0",
+    "members": [
+      {
+        "name": "Ana"
+      },
+      {
+        "name": "Ben"
+      },
+      {
+        "name": "Carla"
+      },
+      {
+        "name": "Diego"
+      },
+      {
+        "name": "Elena"
+      }
+    ],
+    "leader": "Carla",
+    "agreements": [
+      "We decide by consensus. If we can't in 3 minutes, we vote using the matrix criteria.",
+      "Nobody stars a finding whose source nobody has opened.",
+      "Carla keeps time; anyone can call 'decide now'."
+    ]
+  },
+  "workshop": {
+    "current": 1,
+    "agenda": [
+      {
+        "id": "kickoff",
+        "label": "Kick-off: pack, intros, Team Leader",
+        "minutes": 10,
+        "tab": "team"
+      },
+      {
+        "id": "pestel",
+        "label": "Sprint 1 · PESTEL research (each person one dimension)",
+        "minutes": 15,
+        "tab": "pestel"
+      },
+      {
+        "id": "pestel-share",
+        "label": "Sprint 1 · Share and pick the key factors",
+        "minutes": 10,
+        "tab": "pestel"
+      },
+      {
+        "id": "sector",
+        "label": "Sprint 2 · How the sector works (each person one dimension)",
+        "minutes": 20,
+        "tab": "sector"
+      },
+      {
+        "id": "sector-share",
+        "label": "Sprint 2 · Share and list opportunities",
+        "minutes": 15,
+        "tab": "opportunities"
+      },
+      {
+        "id": "hypotheses",
+        "label": "Write three business hypotheses",
+        "minutes": 15,
+        "tab": "hypotheses"
+      },
+      {
+        "id": "matrix",
+        "label": "Weighted decision matrix + decide",
+        "minutes": 15,
+        "tab": "hypotheses"
+      },
+      {
+        "id": "define",
+        "label": "Define the chosen idea + launch market",
+        "minutes": 15,
+        "tab": "hypotheses"
+      },
+      {
+        "id": "close",
+        "label": "Close: decisions + handoff to Workshop 2",
+        "minutes": 5,
+        "tab": "handoff"
+      }
+    ],
+    "timer": {
+      "blockId": "",
+      "startedAt": null
+    }
+  },
+  "matrix": {
+    "scale": 5,
+    "criteria": [
+      {
+        "id": "evidence",
+        "label": "Evidence the problem is real",
+        "weight": 25,
+        "hint": "Data, sources, reviews, reports. Not opinions."
+      },
+      {
+        "id": "customer",
+        "label": "Clear, reachable customer",
+        "weight": 15,
+        "hint": "Can you name them and find 10 of them next week?"
+      },
+      {
+        "id": "size",
+        "label": "Size of the opportunity",
+        "weight": 15,
+        "hint": "How many have the problem, how often, how much it costs them."
+      },
+      {
+        "id": "now",
+        "label": "Why now",
+        "weight": 10,
+        "hint": "A PESTEL factor that makes this more urgent today than 3 years ago."
+      },
+      {
+        "id": "pay",
+        "label": "Someone will pay",
+        "weight": 20,
+        "hint": "Who pays, how much, through which revenue model."
+      },
+      {
+        "id": "feasible",
+        "label": "Feasible to launch",
+        "weight": 15,
+        "hint": "Could a seed-stage team launch it in the chosen market?"
+      }
+    ]
+  },
+  "assignments": {
+    "pestel": {
+      "political": "Ana",
+      "economic": "Ben",
+      "social": "Carla",
+      "technological": "Diego",
+      "environmental": "Elena",
+      "legal": "Ana"
+    },
+    "sector": {
+      "ecosystem": "Ben",
+      "valuechain": "Carla",
+      "frictions": "Diego",
+      "competition": "Elena",
+      "segments": "Ana",
+      "models": "Ben"
+    }
+  },
+  "selection": {
+    "hypothesisId": "H-ana-01",
+    "method": "consensus",
+    "votes": {},
+    "rationale": "Strongest evidence base (PortMiami's record year) and a customer we can find at one place: the cruise terminals. H-diego-01 is interesting but rests on sources we haven't found yet.",
+    "decidedAt": "2026-10-20T15:42:00.000Z"
+  },
+  "updatedAt": "2026-10-20T15:55:00.000Z"
+}

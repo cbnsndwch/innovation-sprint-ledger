@@ -1,0 +1,35 @@
+{
+  "id": "F-ben-01",
+  "sprint": "pestel",
+  "dimension": "economic",
+  "author": "Ben",
+  "title": "International arrivals fell in 2025 while domestic travel carries the market",
+  "detail": "68.3M international arrivals in 2025 vs 72.4M in 2024 (NTTO projects ~70.5M in 2026). Domestic travelers are $1.2T of $1.35T total U.S. travel spending.",
+  "whoAffected": "Operators that depend on overseas visitors",
+  "implication": "Demand mix is shifting. Whoever wins high-spending international niches, or domestic volume, gains.",
+  "sources": [
+    {
+      "label": "NTTO (U.S. Dept. of Commerce), Mar. 2026: 68.3 million international arrivals in 2025 vs. 72.4 million in 2024; NTTO projects about 70.5 million in 2026",
+      "url": "",
+      "year": "2026",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    },
+    {
+      "label": "U.S. Travel Association, 2025: $1.35 trillion total travel spending in 2025; domestic travelers account for $1.2 trillion (87%) across about 2.4 billion domestic trips",
+      "url": "",
+      "year": "2025",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    }
+  ],
+  "origin": "team",
+  "key": true,
+  "notes": "",
+  "createdAt": "2026-10-20T14:12:00.000Z",
+  "updatedAt": "2026-10-20T14:30:00.000Z"
+}

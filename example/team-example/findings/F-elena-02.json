@@ -1,0 +1,26 @@
+{
+  "id": "F-elena-02",
+  "sprint": "sector",
+  "dimension": "competition",
+  "author": "Elena",
+  "title": "Experience marketplaces earn a commission on every booking",
+  "detail": "The pack lists Viator, GetYourGuide, Fever, Klook: commission on bookings, markup on packages, supplier fees.",
+  "whoAffected": "Operators who sell through them",
+  "implication": "Operators want direct bookings but need the reach.",
+  "sources": [
+    {
+      "label": "Sector Exploration Pack: who is in the sector and how they make money",
+      "url": "",
+      "year": "2026",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    }
+  ],
+  "origin": "team",
+  "key": false,
+  "notes": "",
+  "createdAt": "2026-10-20T14:48:00.000Z",
+  "updatedAt": "2026-10-20T15:05:00.000Z"
+}

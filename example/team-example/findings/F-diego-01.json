@@ -1,0 +1,16 @@
+{
+  "id": "F-diego-01",
+  "sprint": "pestel",
+  "dimension": "technological",
+  "author": "Diego",
+  "title": "Trip planning is moving to AI assistants and creators",
+  "detail": "The pack's value chain lists 'search and AI assistants' at the inspire-and-plan step.",
+  "whoAffected": "Destination marketers, OTAs, small operators who aren't visible there",
+  "implication": "Operators missing from AI answers may lose discovery.",
+  "sources": [],
+  "origin": "ai",
+  "key": false,
+  "notes": "Source to find: a survey with the share of U.S. travelers using AI to plan trips. The AI answer gave a percentage but no source we could open, so we left it out.",
+  "createdAt": "2026-10-20T14:12:00.000Z",
+  "updatedAt": "2026-10-20T14:30:00.000Z"
+}

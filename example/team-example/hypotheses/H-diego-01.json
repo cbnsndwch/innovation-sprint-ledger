@@ -1,0 +1,35 @@
+{
+  "id": "H-diego-01",
+  "order": 3,
+  "title": "OneCalendar",
+  "customer": "Independent tour operators in Miami-Dade selling on 2 or more marketplaces",
+  "problem": "They re-enter bookings by hand and risk double bookings.",
+  "solution": "A booking sync that pulls every marketplace into one calendar and blocks sold slots everywhere.",
+  "valueProp": "Hours saved every week and no double bookings.",
+  "revenueModel": "SaaS subscription per operator per month.",
+  "businessModel": "B2B",
+  "whyNow": "Bookings are moving to marketplaces.",
+  "launchMarket": "Miami-Dade",
+  "launchMarketWhy": "",
+  "openQuestions": [
+    "Do the marketplaces allow this kind of sync? (to check)",
+    "Our only evidence of the friction is an AI answer with no source."
+  ],
+  "opportunityIds": [
+    "O-diego-01"
+  ],
+  "sources": [],
+  "scores": {
+    "evidence": 2,
+    "customer": 4,
+    "size": 3,
+    "now": 3,
+    "pay": 4,
+    "feasible": 3
+  },
+  "author": "Diego",
+  "origin": "ai",
+  "archived": false,
+  "createdAt": "2026-10-20T15:15:00.000Z",
+  "updatedAt": "2026-10-20T15:40:00.000Z"
+}

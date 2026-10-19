@@ -1,0 +1,35 @@
+{
+  "id": "F-ben-03",
+  "sprint": "sector",
+  "dimension": "ecosystem",
+  "author": "Ben",
+  "title": "PortMiami passed 10 million cruise passengers in FY2026",
+  "detail": "Above the prior record of 8.56M. 20.6M of 37.2M cruise passengers worldwide in 2025 were sourced from the U.S.",
+  "whoAffected": "Cruise passengers, terminals, transport and hospitality around the port",
+  "implication": "Record volume through one place: any friction around embarkation day scales.",
+  "sources": [
+    {
+      "label": "PortMiami, Sep. 2026: Passed 10 million cruise passengers in fiscal year 2026 (Oct. 2025 to Sep. 2026), above the prior record of 8.56 million",
+      "url": "",
+      "year": "2026",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    },
+    {
+      "label": "CLIA, State of the Cruise Industry 2026: 37.2 million cruise passengers worldwide in 2025, of which 20.6 million sourced from the U.S.; the Caribbean is about 43% of global deployments",
+      "url": "",
+      "year": "2026",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    }
+  ],
+  "origin": "team",
+  "key": false,
+  "notes": "",
+  "createdAt": "2026-10-20T14:48:00.000Z",
+  "updatedAt": "2026-10-20T15:05:00.000Z"
+}

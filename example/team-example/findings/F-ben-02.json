@@ -1,0 +1,26 @@
+{
+  "id": "F-ben-02",
+  "sprint": "pestel",
+  "dimension": "economic",
+  "author": "Ben",
+  "title": "International visitors to Miami-Dade spend over $1,150 per trip",
+  "detail": "Top markets: Colombia, Brazil, UK, Canada, Mexico, Argentina, Spain, Italy, Germany, France.",
+  "whoAffected": "Hotels, attractions and tours serving international guests",
+  "implication": "Each international visitor is worth a lot. Friction that loses even part of their spend matters.",
+  "sources": [
+    {
+      "label": "GMCVB, June 2026: International visitors spend over $1,150 per person per trip. Top markets: Colombia, Brazil, UK, Canada, Mexico, Argentina, Spain, Italy, Germany, France",
+      "url": "",
+      "year": "2026",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    }
+  ],
+  "origin": "team",
+  "key": true,
+  "notes": "",
+  "createdAt": "2026-10-20T14:12:00.000Z",
+  "updatedAt": "2026-10-20T14:30:00.000Z"
+}

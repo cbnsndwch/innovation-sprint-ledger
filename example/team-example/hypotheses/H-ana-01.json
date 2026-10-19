@@ -1,0 +1,45 @@
+{
+  "id": "H-ana-01",
+  "order": 1,
+  "title": "PortDay",
+  "customer": "Cruise passengers with a gap of 3 or more hours between their flight and the ship on sailing or landing day in Miami",
+  "problem": "They're stuck with luggage and nothing to do, often at the terminal or airport, for hours.",
+  "solution": "A day pass: luggage pick-up at the airport or ship, delivered to the terminal or the flight, plus a short bookable Miami experience in between.",
+  "valueProp": "Turn dead time into the first (or last) good day of the trip, without dragging bags around.",
+  "revenueModel": "Per-passenger fee, plus a commission on the experiences booked.",
+  "businessModel": "B2C",
+  "whyNow": "PortMiami's record volume: more passengers, and more of them with tight connections.",
+  "launchMarket": "PortMiami, Miami-Dade",
+  "launchMarketWhy": "PortMiami passed 10M cruise passengers in FY2026, above the 8.56M record (PortMiami, Sep. 2026), and one place concentrates the whole customer group.",
+  "openQuestions": [
+    "Will cruise lines let a third party hand luggage over at the terminal?",
+    "How many passengers actually have 3+ hours? (source to find)"
+  ],
+  "opportunityIds": [
+    "O-ana-01"
+  ],
+  "sources": [
+    {
+      "label": "PortMiami, Sep. 2026: Passed 10 million cruise passengers in fiscal year 2026 (Oct. 2025 to Sep. 2026), above the prior record of 8.56 million",
+      "url": "",
+      "year": "2026",
+      "pack": true,
+      "verified": true,
+      "verifiedBy": "Sector Exploration Pack",
+      "verifiedAt": "2026-10-20T14:05:00.000Z"
+    }
+  ],
+  "scores": {
+    "evidence": 4,
+    "customer": 5,
+    "size": 4,
+    "now": 4,
+    "pay": 3,
+    "feasible": 4
+  },
+  "author": "Ana",
+  "origin": "team",
+  "archived": false,
+  "createdAt": "2026-10-20T15:15:00.000Z",
+  "updatedAt": "2026-10-20T15:40:00.000Z"
+}
