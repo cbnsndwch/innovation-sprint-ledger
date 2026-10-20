@@ -1,7 +1,7 @@
 /* Sector Exploration Pack (.docx) → sector.json
  * Runs in the browser (sprint.html) and in Bun (kit.ts sector). No dependencies:
  * a tiny zip reader + DecompressionStream('deflate-raw') + regex over word/document.xml.
- * All 8 packs share one layout: a title block, then numbered sections
+ * All the packs (one per sector) share one layout: a title block, then numbered sections
  * (definition, players, value chain, key figures, challenge, guiding questions,
  * glossary, sources). Sections are matched by keywords in their heading, not by
  * number, and every section also keeps its raw paragraphs and tables, so a pack
@@ -71,7 +71,7 @@ const SectorPack = (() => {
   const isHeading = (b) => b.t === 'p' && /^\d{1,2}\.\s+\S/.test(b.text) && b.text.length < 90 && b.text === b.text.toUpperCase();
 
   function parseBlocks(bl) {
-    const sector = { schema: SECTOR_SCHEMA, id: '', name: '', label: '', referenceMarket: '', intro: '', definition: '', inside: [], outside: [], players: [], playersNote: '', revenueModels: [],
+    const sector = { schema: SECTOR_SCHEMA, id: '', name: '', label: '', referenceMarket: '', intro: '', definition: '', inside: [], outside: [], boundaryRows: [], players: [], playersNote: '', revenueModels: [],
       valueChain: { note: '', steps: [], enabling: [] }, keyFigures: [], figuresNote: '', challenge: '', pestelNote: '', sprint2Questions: [], glossary: [], sources: [], sections: [], extra: [] };
     let i = 0;
     const head = [];
@@ -100,7 +100,12 @@ const SectorPack = (() => {
           sector.definition = ps[0] || '';
           for (const r of (tables[0] || {}).rows || []) {
             if (/^inside/i.test(r[0])) sector.inside = splitDots(r.slice(1).join(' '));
-            if (/^outside/i.test(r[0])) sector.outside = [r.slice(1).join(' ')];
+            else if (/^outside/i.test(r[0])) sector.outside = [r.slice(1).join(' ')];
+            // any other labelled row, e.g. Fintech's "Rules of the game" (the regulators)
+            else if (r[0] && r.slice(1).join('').trim()) {
+              const txt = r.slice(1).join(' '), cut = txt.search(/\.\s+[A-Z]/);
+              sector.boundaryRows.push(Object.assign({ label: r[0], items: splitDots(cut > 0 ? txt.slice(0, cut) : txt) }, cut > 0 ? { note: txt.slice(cut + 1).trim() } : {}));
+            }
           }
           if (sector.outside.length === 1) {
             const s = sector.outside[0], cut = s.search(/\.\s+[A-Z]/);

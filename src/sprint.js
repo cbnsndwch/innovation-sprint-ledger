@@ -4,7 +4,7 @@
   const BUILTIN_SECTORS = /*@SECTORS*/[];
   const SKILL_FILES = /*@SKILLS*/{}; // { 'sector-research/SKILL.md': '…', … } bundled at build time
 
-  // Sprint 1: one PESTEL dimension per person. Hints stay sector-neutral: the same board serves all eight packs.
+  // Sprint 1: one PESTEL dimension per person. Hints stay sector-neutral: the same board serves every sector pack.
   const PESTEL = [
     ['political', 'Political', 'Government policy, public funding and promotion, trade, international relations, local politics'],
     ['economic', 'Economic', 'Demand, prices, exchange rates, interest rates, labor costs, investment'],
@@ -219,7 +219,8 @@
       s.definition ? h('p', { class: 'lead' }, s.definition) : null,
       h('div', { class: 'inout' },
         h('div', null, h('h4', { class: 'in' }, 'Inside'), ul(s.inside || [])),
-        h('div', null, h('h4', { class: 'out' }, 'Outside'), ul(s.outside || []), s.outsideNote ? h('p', { class: 'small muted' }, s.outsideNote) : null))));
+        h('div', null, h('h4', { class: 'out' }, 'Outside'), ul(s.outside || []), s.outsideNote ? h('p', { class: 'small muted' }, s.outsideNote) : null)),
+      (s.boundaryRows || []).map(r => h('div', { class: 'enabling' }, h('span', { class: 'kicker' }, r.label), h('div', { class: 'chips' }, r.items.map(x => h('span', { class: 'chip' }, x))), r.note ? h('span', { class: 'small muted' }, r.note) : null))));
     const vc = s.valueChain || {};
     if ((vc.steps || []).length) g.append(h('section', { class: 'card c12' }, h('div', { class: 'kicker' }, 'Example value chain'),
       vc.note ? h('p', { class: 'small muted', style: { marginTop: 0 } }, vc.note) : null,
@@ -417,6 +418,7 @@
       `Sector: ${s.name}. ${s.definition || ''}`,
       s.inside && s.inside.length ? `Inside the sector: ${s.inside.join('; ')}.` : '',
       s.outside && s.outside.length ? `Outside (partners or channels only, not the core of the idea): ${s.outside.join('; ')}.` : '',
+      ...(s.boundaryRows || []).map(r => `${r.label}: ${r.items.join('; ')}.${r.note ? ' ' + r.note : ''}`),
       s.referenceMarket ? `Reference market: ${s.referenceMarket}.` : '',
       s.challenge ? `\nExploration Challenge: ${s.challenge}` : '',
       withFigures && (s.keyFigures || []).length ? '\nKey figures from our Sector Exploration Pack (checked by the organizers):\n' + s.keyFigures.map(f => `- [${f.level}] ${f.figure} (${f.source})`).join('\n') : '',

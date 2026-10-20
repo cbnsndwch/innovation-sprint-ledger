@@ -1,0 +1,292 @@
+{
+  "schema": "sector-pack/1",
+  "id": "health-wellness-longevity",
+  "name": "Health, Wellness & Longevity",
+  "label": "SECTOR EXPLORATION PACK | WORKSHOP 1",
+  "referenceMarket": "United States (Miami/Florida as a reference case; national-scope ideas are welcome)",
+  "intro": "This Pack gives you a common starting point: vocabulary, structure and verified figures. It does not define the problem, customer or solution. That is your job.",
+  "definition": "Businesses and services that prevent, diagnose, treat, manage and support health across the life span, from clinical care to everyday wellbeing, plus the technology and services that power them.",
+  "inside": [
+    "Care delivery (primary, specialty, urgent, home and virtual care)",
+    "Senior care and aging in place",
+    "Mental and behavioral health",
+    "Wellness, fitness, nutrition and prevention",
+    "Health insurance, benefits and payments",
+    "Digital health, devices and wearables",
+    "B2B software and services for providers, payers and employers"
+  ],
+  "outside": [
+    "Drug discovery and biotech R&D",
+    "Medical device manufacturing",
+    "Hospital construction and real estate"
+  ],
+  "boundaryRows": [],
+  "players": [
+    {
+      "type": "Hospitals and physician groups",
+      "howMoney": "Fee-for-service payments, facility fees, value-based contracts with insurers. High fixed costs and labor intensity.",
+      "examples": "HCA Healthcare, Baptist Health South Florida, Jackson Health System"
+    },
+    {
+      "type": "Primary care and senior care networks",
+      "howMoney": "Per-member capitated payments (often Medicare Advantage) or fee-for-service; profit depends on keeping patients healthy.",
+      "examples": "Oak Street Health, One Medical, CenterWell"
+    },
+    {
+      "type": "Insurers and benefit providers",
+      "howMoney": "Premiums and administrative fees; Medicare Advantage and Medicaid managed care contracts; employer plans.",
+      "examples": "UnitedHealthcare, Humana, Florida Blue, Aetna"
+    },
+    {
+      "type": "Virtual care and consumer digital health",
+      "howMoney": "Subscription, per-visit fees, direct-to-consumer products, and employer or payer contracts (per member per month).",
+      "examples": "Teladoc, Hims & Hers, Talkspace"
+    },
+    {
+      "type": "Wellness, fitness and longevity",
+      "howMoney": "Memberships, freemium apps with premium tiers, hardware plus subscription, testing and coaching packages.",
+      "examples": "Planet Fitness, Oura, WHOOP, Calm, Function Health"
+    },
+    {
+      "type": "Pharmacy, labs and retail health",
+      "howMoney": "Product margin, reimbursement from insurers, test fees and clinic visits.",
+      "examples": "CVS Health, Quest Diagnostics"
+    },
+    {
+      "type": "Senior living and home care",
+      "howMoney": "Monthly private-pay fees, long-term care insurance, Medicaid waivers, hourly caregiving rates.",
+      "examples": "Brookdale Senior Living, Home Instead"
+    },
+    {
+      "type": "B2B health technology",
+      "howMoney": "SaaS subscriptions per provider or seat, per-transaction fees, advertising and pay-per-lead from providers or pharma. Includes records, scheduling, billing and clinical AI.",
+      "examples": "Epic, athenahealth, Doximity, OpenEvidence"
+    }
+  ],
+  "playersNote": "Illustrative map, not exhaustive. Examples are well-known players to help you recognize each model, not a recommendation to copy them.",
+  "revenueModels": [
+    "fee-for-service",
+    "capitation and value-based per member",
+    "premiums",
+    "subscription and membership",
+    "per-visit fees",
+    "employer and payer contracts (PMPM)",
+    "freemium apps",
+    "hardware plus subscription",
+    "SaaS",
+    "marketplace fees and lead generation"
+  ],
+  "valueChain": {
+    "note": "One possible lens. The chain changes by segment (hospital care, senior care, consumer wellness, B2B software). Map the one that fits your area of interest and decide where value is created and captured.",
+    "steps": [
+      {
+        "name": "Stay well",
+        "actors": "Gyms, wellness brands, wearables, nutrition apps, employers, public health programs"
+      },
+      {
+        "name": "Notice and navigate",
+        "actors": "Search, symptom checkers, primary care, navigators, insurer member services"
+      },
+      {
+        "name": "Access and enroll",
+        "actors": "Insurers and brokers, scheduling platforms, telehealth, pharmacies"
+      },
+      {
+        "name": "Treat and deliver",
+        "actors": "Hospitals, clinics, specialists, labs and imaging, home care, pharmacies"
+      },
+      {
+        "name": "Pay and reimburse",
+        "actors": "Payers, pharmacy benefit managers, billing and claims software, patients (out of pocket)"
+      },
+      {
+        "name": "Manage and follow up",
+        "actors": "Chronic care programs, remote monitoring, caregivers, senior living, community groups"
+      }
+    ],
+    "enabling": [
+      "clinical workforce",
+      "electronic health records",
+      "data and AI",
+      "regulation and licensing",
+      "payments",
+      "medical supply chain"
+    ],
+    "enablingLabel": "Enabling layer across all steps"
+  },
+  "keyFigures": [
+    {
+      "level": "U.S.",
+      "figure": "$5.3 trillion in national health spending in 2024 (+8.2%, faster than GDP growth of 5.3%); about 18.0% of GDP",
+      "source": "CMS, National Health Expenditures 2024"
+    },
+    {
+      "level": "U.S.",
+      "figure": "61.2 million people aged 65+ in 2024 (18.0% of the population, +3.1% vs. 2023); older adults outnumber children in 11 states",
+      "source": "U.S. Census Bureau, June 2025"
+    },
+    {
+      "level": "U.S.",
+      "figure": "8% of Americans uninsured in 2024. For Hispanic adults aged 19-64 the rate is 23%, the highest of any group reported",
+      "source": "Census Bureau data, via Becker's Payer, 2024"
+    },
+    {
+      "level": "U.S. wellness",
+      "figure": "$1.8 trillion U.S. wellness economy, the largest in the world. Biggest segments: physical activity ($339B), personal care and beauty ($310B), healthy eating and weight loss ($289B)",
+      "source": "Global Wellness Institute, 2024 release"
+    },
+    {
+      "level": "U.S. digital health",
+      "figure": "$14.2 billion in venture funding across 482 deals in 2025 (+35%, highest since 2022); 26 nine-figure rounds; fitness, wellness and longevity moved into the top funded areas",
+      "source": "Rock Health, 2025 year-end"
+    },
+    {
+      "level": "Florida",
+      "figure": "21.8% of residents are 65+ (U.S.: 18%) and 28.8% are Hispanic (U.S.: about 20%); about 23.5 million people",
+      "source": "Census data via USAFacts, 2024-25"
+    },
+    {
+      "level": "Florida startups",
+      "figure": "Healthtech is Florida's largest startup sector: $1.7 billion raised in 2025. South Florida healthtech: $821 million across 56 deals",
+      "source": "Emerge Americas via Refresh Miami, 2025"
+    },
+    {
+      "level": "Miami",
+      "figure": "OpenEvidence, a clinical AI company, moved to Miami in 2025 and raised a $200 million round, the largest South Florida venture deal of the year",
+      "source": "Emerge Americas via Refresh Miami, 2025"
+    }
+  ],
+  "figuresNote": "Some figures are preliminary or estimates. Always check the latest release and cite the source and year in your own work.",
+  "challenge": "Health care is one of the largest parts of the U.S. economy, yet patients, caregivers, providers and employers still face friction in access, cost, navigation and continuity of care, while the population ages and diversifies. Identify one specific, evidence-backed friction experienced by a clearly defined customer (a patient, caregiver, provider, employer or insurer) in the U.S., and show why it is worth solving now. Choose an initial launch market (for example Miami/Florida or another U.S. region) and justify your choice with data. Note how regulation affects your idea at seed stage.",
+  "pestelNote": "Sprint 1, PESTEL: each team member takes one dimension. The figures above are a starting point only; look for what is changing and who it affects.",
+  "sprint2Questions": [
+    {
+      "dimension": "Ecosystem and actors",
+      "question": "Who pays, who delivers and who decides in your segment? Who captures most of the value, and who is entering or leaving?"
+    },
+    {
+      "dimension": "Value chain",
+      "question": "At which step of the health journey do patients or providers lose time, money or trust? Who captures the margin?"
+    },
+    {
+      "dimension": "Processes and frictions",
+      "question": "What do patients, caregivers or staff still do manually or work around? What evidence shows it matters (data, studies, reviews)?"
+    },
+    {
+      "dimension": "Existing solutions and competition",
+      "question": "How is the problem solved today, and by whom? What do those solutions fail to do for your customer?"
+    },
+    {
+      "dimension": "Segments and needs",
+      "question": "Which group is most affected: older adults, caregivers, working-age adults, Hispanic and Spanish-speaking patients, employers? How large is it?"
+    },
+    {
+      "dimension": "Business models",
+      "question": "Who pays in your idea (patient, employer, insurer, provider) and why? Which revenue model fits and what does it imply for sales cycles?"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Payer",
+      "def": "Entity that pays for care (insurer, Medicare, Medicaid, employer)"
+    },
+    {
+      "term": "Provider",
+      "def": "Entity that delivers care (hospital, clinic, physician, therapist)"
+    },
+    {
+      "term": "Fee-for-service",
+      "def": "Providers are paid per visit or procedure"
+    },
+    {
+      "term": "Value-based care",
+      "def": "Payment tied to outcomes and cost, not volume"
+    },
+    {
+      "term": "PMPM",
+      "def": "Per member per month: fixed payment regardless of use (capitation)"
+    },
+    {
+      "term": "EHR",
+      "def": "Electronic health record: the system of record for patient data"
+    },
+    {
+      "term": "Telehealth",
+      "def": "Care delivered remotely by video, phone or messaging"
+    },
+    {
+      "term": "HIPAA",
+      "def": "U.S. federal rules protecting patient health information"
+    },
+    {
+      "term": "Medicare Adv.",
+      "def": "Medicare Advantage: private plans paid by Medicare for older adults"
+    },
+    {
+      "term": "Healthspan",
+      "def": "Years lived in good health, as opposed to total lifespan"
+    }
+  ],
+  "sources": [
+    {
+      "group": "Data",
+      "items": [
+        "CMS National Health Expenditure data (cms.gov)",
+        "U.S. Census Bureau (census.gov)",
+        "CDC and NCHS (cdc.gov)",
+        "KFF (kff.org)",
+        "Global Wellness Institute",
+        "Rock Health",
+        "Emerge Americas"
+      ]
+    },
+    {
+      "group": "Industry analysis",
+      "items": [
+        "STAT",
+        "Fierce Healthcare",
+        "Healthcare Dive",
+        "Rock Health reports",
+        "company 10-K filings and investor presentations"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "key": "definition",
+      "title": "Sector Definition and Boundaries"
+    },
+    {
+      "key": "players",
+      "title": "Who Is in the Sector and How They Make Money"
+    },
+    {
+      "key": "valueChain",
+      "title": "Example Value Chain: the Health Journey"
+    },
+    {
+      "key": "keyFigures",
+      "title": "Key Figures"
+    },
+    {
+      "key": "challenge",
+      "title": "Exploration Challenge"
+    },
+    {
+      "key": "questions",
+      "title": "Guiding Questions for Your Research"
+    },
+    {
+      "key": "glossary",
+      "title": "Quick Glossary"
+    },
+    {
+      "key": "sources",
+      "title": "Reliable Sources to Start"
+    }
+  ],
+  "extra": [],
+  "outsideNote": "They can appear as partners or suppliers, but are not the core of your idea.",
+  "sourceFile": "Sector_Exploration_Pack_Health_Wellness_Longevity.docx",
+  "parsedAt": "2026-10-20T14:18:26.573Z"
+}

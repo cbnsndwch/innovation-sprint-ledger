@@ -1,0 +1,289 @@
+{
+  "schema": "sector-pack/1",
+  "id": "education-talent-future-of-work",
+  "name": "Education, Talent & Future of Work",
+  "label": "SECTOR EXPLORATION PACK | WORKSHOP 1",
+  "referenceMarket": "United States (Miami/Florida as a reference case; national-scope ideas are welcome)",
+  "intro": "This Pack gives you a common starting point: vocabulary, structure and verified figures. It does not define the problem, customer or solution. That is your job.",
+  "definition": "Businesses and institutions that educate, train, certify, match and manage people across their careers, from college to workforce reskilling, plus the technology and services that power them.",
+  "inside": [
+    "Higher education and alternative credentials (certificates, bootcamps, apprenticeships)",
+    "K-12 and early-learning support",
+    "Corporate training and upskilling",
+    "Recruiting, staffing and job marketplaces",
+    "HR, payroll and workforce software",
+    "Career services and education financing",
+    "Edtech and B2B services to schools and employers"
+  ],
+  "outside": [
+    "Building and operating campuses as real estate",
+    "Non-commercial content publishing",
+    "Government programs themselves (they can be customers or partners)"
+  ],
+  "boundaryRows": [],
+  "players": [
+    {
+      "type": "Universities and colleges",
+      "howMoney": "Tuition and fees, federal and state aid, research funding; online programs often run with an external partner on revenue share.",
+      "examples": "Miami Dade College, FIU, UF, MIU."
+    },
+    {
+      "type": "Online learning platforms",
+      "howMoney": "Subscriptions, per-course fees, paid certificates, and B2B licenses sold to employers and universities.",
+      "examples": "Coursera, Udemy, LinkedIn Learning"
+    },
+    {
+      "type": "Bootcamps and skills programs",
+      "howMoney": "Tuition, employer-paid placement fees, sometimes income-share agreements. Outcomes-based credibility.",
+      "examples": "General Assembly, Per Scholas, Multiverse"
+    },
+    {
+      "type": "Corporate learning platforms",
+      "howMoney": "SaaS subscription per learner or employee, content licensing, implementation services.",
+      "examples": "Degreed, Docebo, Skillsoft, Cornerstone"
+    },
+    {
+      "type": "Recruiting marketplaces and job boards",
+      "howMoney": "Subscriptions, pay-per-post or pay-per-click, success fees on hires, premium candidate search.",
+      "examples": "LinkedIn, Indeed, ZipRecruiter, Handshake"
+    },
+    {
+      "type": "Staffing and talent platforms",
+      "howMoney": "Markup on hourly pay, placement fees, marketplace take rate on freelance work.",
+      "examples": "Robert Half, Randstad, Upwork"
+    },
+    {
+      "type": "HR and payroll software",
+      "howMoney": "SaaS per employee per month, payroll processing and compliance fees, employer-of-record fees for global hiring.",
+      "examples": "Workday, ADP, Gusto, Rippling, Deel"
+    },
+    {
+      "type": "Consumer edtech and student services",
+      "howMoney": "Freemium subscriptions, tutoring by the hour, institutional licenses, student financing products.",
+      "examples": "Duolingo, Chegg, Nerdy"
+    }
+  ],
+  "playersNote": "Illustrative map, not exhaustive. Examples are well-known players to help you recognize each model, not a recommendation to copy them.",
+  "revenueModels": [
+    "tuition and fees",
+    "subscription and freemium",
+    "per-learner or per-seat SaaS",
+    "placement and success fees",
+    "income-share agreements",
+    "wage markup (staffing)",
+    "pay-per-post and lead generation",
+    "government funding and grants",
+    "institutional licensing"
+  ],
+  "valueChain": {
+    "note": "One possible lens. The chain changes by segment (higher education, corporate training, recruiting, HR software). Map the one that fits your area of interest and decide where value is created and captured.",
+    "steps": [
+      {
+        "name": "Explore and choose",
+        "actors": "Career advisors, schools, search and social media, employers, labor-market data"
+      },
+      {
+        "name": "Fund and enroll",
+        "actors": "Admissions, financial aid, student loans, employer tuition benefits, scholarships"
+      },
+      {
+        "name": "Learn and practice",
+        "actors": "Universities, community colleges, online platforms, bootcamps, apprenticeships, employers"
+      },
+      {
+        "name": "Prove and certify",
+        "actors": "Degrees, certificates, micro-credentials, assessments, portfolios, licensing bodies"
+      },
+      {
+        "name": "Match and hire",
+        "actors": "Job boards, recruiters, applicant tracking systems, staffing firms, professional networks"
+      },
+      {
+        "name": "Work and grow",
+        "actors": "Onboarding, HR and payroll systems, upskilling, mobility, performance management"
+      }
+    ],
+    "enabling": [
+      "funding (tuition, federal aid, employer spend)",
+      "accreditation and credential trust",
+      "labor-market data",
+      "AI and learning technology",
+      "regulation"
+    ],
+    "enablingLabel": "Enabling layer across all steps"
+  },
+  "keyFigures": [
+    {
+      "level": "U.S.",
+      "figure": "19.4 million postsecondary enrollments in fall 2025 (+1.0%): undergraduate 16.2 million (+1.2%), graduate 3.2 million (-0.3%)",
+      "source": "National Student Clearinghouse Research Center, fall 2025"
+    },
+    {
+      "level": "U.S.",
+      "figure": "Undergraduate certificate enrollment up 1.9%; community college certificate enrollment at 752,000, up 28.3% since fall 2021",
+      "source": "National Student Clearinghouse Research Center, fall 2025"
+    },
+    {
+      "level": "U.S. student debt",
+      "figure": "$1.86 trillion outstanding (Q1 2026); 42.6 million federal borrowers; about 9 million borrowers ($220 billion) in default, over 13% of the federal portfolio",
+      "source": "Federal Reserve and U.S. Dept. of Education, via SoFi, 2026"
+    },
+    {
+      "level": "U.S. labor",
+      "figure": "September 2026: +29,000 jobs, unemployment 4.2%, 1.9 million long-term unemployed (27.1% of the unemployed). Analysts describe a market with few hires and few layoffs",
+      "source": "BLS Employment Situation, Oct. 2, 2026"
+    },
+    {
+      "level": "U.S. labor",
+      "figure": "April 2026: 7.6 million job openings; hires rate 3.2%; quits rate 1.9%, a level not seen since 2020",
+      "source": "BLS JOLTS via Yahoo Finance, Apr. 2026"
+    },
+    {
+      "level": "Skills",
+      "figure": "44% of worker skills expected to be disrupted within five years; 85% of employers plan to prioritize upskilling; nearly two-thirds name skills gaps as the top barrier to transformation",
+      "source": "WEF Future of Jobs Report 2025, via ATD"
+    },
+    {
+      "level": "AI at work",
+      "figure": "Use of AI among U.S. employees nearly doubled in two years, from 21% to 40%",
+      "source": "Gallup, via ATD, 2025"
+    },
+    {
+      "level": "Florida",
+      "figure": "3.5 million small businesses employing 3.8 million people (39.6% of Florida employees)",
+      "source": "SBA Office of Advocacy, 2025"
+    }
+  ],
+  "figuresNote": "Some figures are preliminary or estimates. Always check the latest release and cite the source and year in your own work.",
+  "challenge": "The U.S. labor market is changing: hiring is slow, AI is reshaping the skills employers need, and learners and companies struggle to link education to real job outcomes, while the cost of learning and student debt weigh on households. Identify one specific, evidence-backed friction experienced by a clearly defined customer (a learner, a worker, an employer or an institution) in the U.S., and show why it is worth solving now. Choose an initial launch market (for example Miami/Florida or another U.S. region) and justify your choice with data.",
+  "pestelNote": "Sprint 1, PESTEL: each team member takes one dimension. The figures above are a starting point only; look for what is changing and who it affects.",
+  "sprint2Questions": [
+    {
+      "dimension": "Ecosystem and actors",
+      "question": "Who pays for learning and who benefits (learner, employer, government, institution)? Who holds the trust and the data?"
+    },
+    {
+      "dimension": "Value chain",
+      "question": "At which step of the talent journey do learners or employers lose time, money or confidence? Who captures the margin?"
+    },
+    {
+      "dimension": "Processes and frictions",
+      "question": "What is still manual, opaque or slow in learning, hiring or onboarding? What evidence shows it matters (surveys, outcomes, costs)?"
+    },
+    {
+      "dimension": "Existing solutions and competition",
+      "question": "How is the problem solved today, and by whom? Which solutions fail to prove outcomes for their customer?"
+    },
+    {
+      "dimension": "Segments and needs",
+      "question": "Which group is most affected: early-career workers, career changers, adult learners, small employers, institutions? How large is it?"
+    },
+    {
+      "dimension": "Business models",
+      "question": "Who pays in your idea (learner, employer, institution, government) and why? How long is the sales cycle, and how do you prove results?"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Upskilling",
+      "def": "New skills for a current role (reskilling: for a new role)"
+    },
+    {
+      "term": "Micro-credential",
+      "def": "Short, verifiable certificate for a specific skill"
+    },
+    {
+      "term": "Title IV",
+      "def": "Federal student aid programs; access depends on accreditation"
+    },
+    {
+      "term": "LMS",
+      "def": "Learning management system: software to deliver training"
+    },
+    {
+      "term": "ATS",
+      "def": "Applicant tracking system: software to manage hiring"
+    },
+    {
+      "term": "Apprenticeship",
+      "def": "Paid, structured on-the-job training with instruction"
+    },
+    {
+      "term": "ISA",
+      "def": "Income-share agreement: learner pays a share of future income"
+    },
+    {
+      "term": "Cost per hire",
+      "def": "Total recruiting cost divided by the number of hires"
+    },
+    {
+      "term": "PEPM",
+      "def": "Per employee per month: common SaaS pricing in HR software"
+    },
+    {
+      "term": "Completion rate",
+      "def": "Share of enrolled learners who finish a program or course"
+    }
+  ],
+  "sources": [
+    {
+      "group": "Data",
+      "items": [
+        "NCES (nces.ed.gov)",
+        "National Student Clearinghouse Research Center",
+        "U.S. Department of Education (College Scorecard)",
+        "BLS (Employment Situation, JOLTS)",
+        "World Economic Forum, Future of Jobs",
+        "Gallup",
+        "SBA Office of Advocacy"
+      ]
+    },
+    {
+      "group": "Industry analysis",
+      "items": [
+        "HolonIQ",
+        "Inside Higher Ed",
+        "Education Dive",
+        "HR Dive",
+        "company 10-K filings and investor presentations"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "key": "definition",
+      "title": "Sector Definition and Boundaries"
+    },
+    {
+      "key": "players",
+      "title": "Who Is in the Sector and How They Make Money"
+    },
+    {
+      "key": "valueChain",
+      "title": "Example Value Chain: the Talent Journey"
+    },
+    {
+      "key": "keyFigures",
+      "title": "Key Figures"
+    },
+    {
+      "key": "challenge",
+      "title": "Exploration Challenge"
+    },
+    {
+      "key": "questions",
+      "title": "Guiding Questions for Your Research"
+    },
+    {
+      "key": "glossary",
+      "title": "Quick Glossary"
+    },
+    {
+      "key": "sources",
+      "title": "Reliable Sources to Start"
+    }
+  ],
+  "extra": [],
+  "sourceFile": "Sector_Exploration_Pack_Education_Talent_Future_of_Work.docx",
+  "parsedAt": "2026-10-20T14:18:26.567Z"
+}

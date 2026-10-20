@@ -19,6 +19,7 @@
     "Independent restaurants with no tourism link",
     "Real estate development and construction"
   ],
+  "boundaryRows": [],
   "players": [
     {
       "type": "Asset-based lodging and cruise",
@@ -295,5 +296,5 @@
   "extra": [],
   "outsideNote": "They can appear as partners or channels, but are not the core of your idea.",
   "sourceFile": "Sector_Exploration_Pack_Tourism_Hospitality.docx",
-  "parsedAt": "2026-10-19T19:02:51.421Z"
+  "parsedAt": "2026-10-20T14:18:26.575Z"
 }

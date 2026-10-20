@@ -1,0 +1,303 @@
+{
+  "schema": "sector-pack/1",
+  "id": "fintech-financial-services",
+  "name": "Fintech & Financial Services",
+  "label": "SECTOR EXPLORATION PACK | WORKSHOP 1",
+  "referenceMarket": "United States (Miami/Florida as a reference case; national-scope ideas are welcome)",
+  "intro": "This Pack gives you a common starting point: vocabulary, structure and verified figures. It does not define the problem, customer or solution. That is your job.",
+  "definition": "Businesses that move, store, lend, insure and manage money for consumers and companies, plus the technology and infrastructure that power them.",
+  "inside": [
+    "Payments and money transfer, domestic and cross-border",
+    "Consumer banking, lending and credit",
+    "Small business finance and B2B payments",
+    "Insurance and insurtech",
+    "Personal finance, wealth and investing",
+    "Financial inclusion",
+    "Infrastructure: banking-as-a-service, compliance, fraud and data APIs. Secondary VC markets"
+  ],
+  "outside": [
+    "Crypto trading and token issuance as the core idea (payments or infrastructure that use blockchain can fit)",
+    "Bank branch operations and real estate",
+    "Investment banking"
+  ],
+  "boundaryRows": [
+    {
+      "label": "Rules of the game",
+      "items": [
+        "CFPB (consumer protection)",
+        "state money-transmitter licenses and FinCEN (AML/KYC rules)",
+        "bank regulators (OCC, FDIC, Federal Reserve) and bank partnerships",
+        "SEC for investing",
+        "state insurance regulators"
+      ],
+      "note": "Know the rules that touch your idea; do not assume they block or enable it."
+    }
+  ],
+  "players": [
+    {
+      "type": "Banks and credit unions",
+      "howMoney": "Net interest margin on loans and deposits, interchange, account and service fees.",
+      "examples": "JPMorgan Chase, Bank of America, credit unions"
+    },
+    {
+      "type": "Card networks and payment processors",
+      "howMoney": "Per-transaction fees (a percentage plus a fixed amount), network fees, software and hardware for merchants.",
+      "examples": "Visa, Mastercard, Stripe, Adyen, Block"
+    },
+    {
+      "type": "Neobanks and digital lenders",
+      "howMoney": "Interchange, subscription tiers, interest on loans, merchant fees (buy now pay later). Often rely on partner banks.",
+      "examples": "Chime, SoFi, Affirm, Klarna"
+    },
+    {
+      "type": "Money transfer and cross-border",
+      "howMoney": "Transfer fee plus FX spread on each transaction; take rate on volume.",
+      "examples": "Western Union, Remitly, Wise, MoneyGram"
+    },
+    {
+      "type": "Small business finance and B2B payments",
+      "howMoney": "SaaS subscription, interchange on corporate cards, interest, invoice-financing fees.",
+      "examples": "Bill, Ramp, Brex, Square"
+    },
+    {
+      "type": "Insurance and insurtech",
+      "howMoney": "Premiums, agent commissions, managing-general-agent fees; claims cost drives profitability.",
+      "examples": "State Farm, Progressive, Lemonade"
+    },
+    {
+      "type": "Wealth and investing",
+      "howMoney": "Fees on assets under management, subscriptions, interest on cash balances, payment for order flow.",
+      "examples": "Fidelity, Schwab, Robinhood, Betterment"
+    },
+    {
+      "type": "Infrastructure and B2B fintech",
+      "howMoney": "API usage fees, SaaS per client, revenue share with banks. Covers data connectivity, card issuing, identity and fraud.",
+      "examples": "Plaid, Marqeta, Alloy, Unit"
+    }
+  ],
+  "playersNote": "Illustrative map, not exhaustive. Examples are well-known players to help you recognize each model, not a recommendation to copy them.",
+  "revenueModels": [
+    "interest spread (net interest margin)",
+    "interchange and processing fees",
+    "transfer fees and FX spread",
+    "subscription and premium tiers",
+    "AUM and advisory fees",
+    "insurance premiums and commissions",
+    "SaaS and API usage fees",
+    "lead generation and referral fees",
+    "merchant fees (buy now pay later)"
+  ],
+  "valueChain": {
+    "note": "One possible lens. The chain changes by segment (consumer banking, payments, lending, insurance, B2B infrastructure). Map the one that fits your area of interest and decide where value is created and captured.",
+    "steps": [
+      {
+        "name": "Acquire and onboard",
+        "actors": "Marketing channels, comparison sites, identity verification (KYC), partner platforms"
+      },
+      {
+        "name": "Fund and store",
+        "actors": "Banks, credit unions, neobanks, wallets, savings and cash-management products"
+      },
+      {
+        "name": "Move and pay",
+        "actors": "Cards, ACH, wires, instant payments, remittance and cross-border providers, merchants"
+      },
+      {
+        "name": "Borrow and finance",
+        "actors": "Banks, digital lenders, credit bureaus, buy-now-pay-later, small business lenders"
+      },
+      {
+        "name": "Protect and grow",
+        "actors": "Insurers, brokers, wealth platforms, investment apps, advisors"
+      },
+      {
+        "name": "Service and comply",
+        "actors": "Customer support, fraud and risk tools, compliance, collections, reporting"
+      }
+    ],
+    "enabling": [
+      "licenses and bank partners",
+      "payment rails (ACH, cards, wires, instant payments)",
+      "credit and identity data",
+      "cloud and APIs",
+      "capital and regulation"
+    ],
+    "enablingLabel": "Enabling layer across all steps"
+  },
+  "keyFigures": [
+    {
+      "level": "U.S.",
+      "figure": "4.2% of households unbanked (about 5.6 million) and 14.2% underbanked (about 19.0 million); 81.6% fully banked",
+      "source": "FDIC National Survey, 2023"
+    },
+    {
+      "level": "U.S. Hispanic",
+      "figure": "Hispanic households: 9.5% unbanked (down from 19.6% in 2009) and 21.7% underbanked. 54.7% of banked Hispanic households use mobile banking as their main access method (all households: 48.3%)",
+      "source": "FDIC National Survey, 2023"
+    },
+    {
+      "level": "U.S. small business",
+      "figure": "37% of employer firms applied for a loan, line of credit or merchant cash advance; among applicants 41% were fully funded and 24% received nothing. Net satisfaction with online lenders fell from 15% to 2%",
+      "source": "Federal Reserve Banks, 2025 Report on Employer Firms"
+    },
+    {
+      "level": "Latino-owned firms",
+      "figure": "465,202 Latino-owned businesses in 2023 (+44% vs. 2018). 21% of Latino entrepreneurs received full funding vs. 40% of white entrepreneurs",
+      "source": "Stanford Latino Entrepreneurship Initiative, 2025"
+    },
+    {
+      "level": "U.S. fintech funding",
+      "figure": "$51 billion across 1,868 deals in 2024. Jan-Sep 2025: $35.9 billion across 1,230 deals (-7% in dollars, -21% in deals): fewer, larger rounds",
+      "source": "FinTech Global, Dec. 2025"
+    },
+    {
+      "level": "Cross-border",
+      "figure": "$173.7 billion in remittances to Latin America and the Caribbean in 2025 (+7.3%, a record); Q1 2026 up 5.7%",
+      "source": "Inter-American Development Bank, 2026"
+    },
+    {
+      "level": "Florida",
+      "figure": "3.5 million small businesses (99.8% of all firms) employing 3.8 million people (39.6% of Florida employees)",
+      "source": "SBA Office of Advocacy, 2025"
+    },
+    {
+      "level": "Miami",
+      "figure": "South Florida startups raised $4.13 billion across 376 deals in 2025 (+49%). Fintech was the top sector at $909 million (85 deals, about 22%)",
+      "source": "Emerge Americas via Refresh Miami, 2025"
+    }
+  ],
+  "figuresNote": "Some figures are preliminary or estimates. Always check the latest release and cite the source and year in your own work.",
+  "challenge": "Money touches every household and business, yet many consumers and small companies still face costly, slow or hard-to-access financial services, while banks, fintechs and infrastructure providers compete to serve them. Identify one specific, evidence-backed friction experienced by a clearly defined customer (a consumer, a small business or a financial institution), and show why it is worth solving now. Choose an initial launch market (for example Miami/Florida or another U.S. region) and justify your choice with data. Note how regulation affects your idea at seed stage.",
+  "pestelNote": "Sprint 1, PESTEL: each team member takes one dimension. The figures above are a starting point only; look for what is changing and who it affects.",
+  "sprint2Questions": [
+    {
+      "dimension": "Ecosystem and actors",
+      "question": "Which types of players hold the customer relationship and the license? Who depends on whom (banks, processors, partners)?"
+    },
+    {
+      "dimension": "Value chain",
+      "question": "At which step of the money journey do customers pay too much, wait too long or drop out? Who captures the margin?"
+    },
+    {
+      "dimension": "Processes and frictions",
+      "question": "What do people or businesses still do manually, or avoid altogether? What evidence shows it matters (surveys, fees, rejection rates)?"
+    },
+    {
+      "dimension": "Existing solutions and competition",
+      "question": "How is the problem solved today, and by whom? Where do incumbents and fintechs fall short for this customer?"
+    },
+    {
+      "dimension": "Segments and needs",
+      "question": "Which customer is most underserved: households, freelancers, small businesses, Hispanic and immigrant communities, cross-border senders? How large is it?"
+    },
+    {
+      "dimension": "Business models",
+      "question": "How does your idea make money (spread, fees, subscription, SaaS)? What are the unit economics and the regulatory cost of serving one customer?"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Interchange",
+      "def": "Fee on each card payment, paid to the card issuer"
+    },
+    {
+      "term": "NIM",
+      "def": "Net interest margin: interest earned on loans minus interest paid on deposits"
+    },
+    {
+      "term": "KYC / AML",
+      "def": "Identity and anti-money-laundering checks required of financial firms"
+    },
+    {
+      "term": "BNPL",
+      "def": "Buy now, pay later: short-term installment credit at checkout"
+    },
+    {
+      "term": "Neobank",
+      "def": "Digital-only bank, usually on a partner bank's license"
+    },
+    {
+      "term": "BaaS",
+      "def": "Banking-as-a-service: banks offer their license and rails via APIs"
+    },
+    {
+      "term": "ACH",
+      "def": "U.S. network for bank-to-bank electronic transfers, such as payroll"
+    },
+    {
+      "term": "Underbanked",
+      "def": "Has an account but also uses costly options (payday loans)"
+    },
+    {
+      "term": "Take rate",
+      "def": "Share of a transaction a platform keeps as revenue"
+    },
+    {
+      "term": "CAC / LTV",
+      "def": "Customer acquisition cost / lifetime value of a customer"
+    }
+  ],
+  "sources": [
+    {
+      "group": "Data",
+      "items": [
+        "FDIC household survey (fdic.gov)",
+        "CFPB (consumerfinance.gov)",
+        "Federal Reserve Small Business Credit Survey (fedsmallbusiness.org)",
+        "Inter-American Development Bank",
+        "Stanford Latino Entrepreneurship Initiative",
+        "SBA Office of Advocacy",
+        "Emerge Americas",
+        "CB Insights",
+        "Crunchbase"
+      ]
+    },
+    {
+      "group": "Industry analysis",
+      "items": [
+        "American Banker",
+        "Payments Dive",
+        "Banking Dive",
+        "Finextra",
+        "company 10-K filings and investor presentations"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "key": "definition",
+      "title": "Sector Definition and Boundaries"
+    },
+    {
+      "key": "players",
+      "title": "Who Is in the Sector and How They Make Money"
+    },
+    {
+      "key": "valueChain",
+      "title": "Example Value Chain: the Money Journey"
+    },
+    {
+      "key": "keyFigures",
+      "title": "Key Figures"
+    },
+    {
+      "key": "challenge",
+      "title": "Exploration Challenge"
+    },
+    {
+      "key": "questions",
+      "title": "Guiding Questions for Your Research"
+    },
+    {
+      "key": "glossary",
+      "title": "Quick Glossary"
+    },
+    {
+      "key": "sources",
+      "title": "Reliable Sources to Start"
+    }
+  ],
+  "extra": [],
+  "sourceFile": "Sector_Exploration_Pack_Fintech_Financial_Services.docx",
+  "parsedAt": "2026-10-20T14:18:26.570Z"
+}

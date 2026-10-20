@@ -104,7 +104,9 @@ Reglas: abre cada fuente antes de pulsar **I checked it**, y cualquier miembro d
 
 `sprint.html` carries the sector packs, the five agent skills and the AI setup prompt. Hand it out as is.
 
-**Adding the other sector packs** (needs [Bun](https://bun.sh), on your machine only):
+**Sector packs included:** Tourism & Hospitality · Fintech & Financial Services · Health, Wellness & Longevity · Education, Talent & Future of Work. Each team picks theirs on the Brief tab.
+
+**Adding or updating a pack** (needs [Bun](https://bun.sh), on your machine only):
 
 ```
 bun kit.ts sector packs/*.docx   # each Sector Exploration Pack → sectors/<id>.json, with a report of what it found

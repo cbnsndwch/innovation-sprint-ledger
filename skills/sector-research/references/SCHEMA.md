@@ -90,7 +90,7 @@ Default matrix criteria (the team can rename, reweight, add or remove them): evi
 
 ## sector.json (the Sector Exploration Pack)
 
-Made by the board (Brief tab → Load a pack .docx), by `bun kit.ts sector pack.docx`, or by the `pack-to-sector` skill. Students read it, they don't edit it. Fields: `schema: "sector-pack/1"`, `id`, `name`, `referenceMarket`, `intro`, `definition`, `inside[]`, `outside[]`, `players[{type, howMoney, examples}]`, `revenueModels[]`, `valueChain{note, steps[{name, actors}], enablingLabel, enabling[]}`, `keyFigures[{level, figure, source}]`, `figuresNote`, `challenge`, `pestelNote`, `sprint2Questions[{dimension, question}]`, `glossary[{term, def}]`, `sources[{group, items[]}]`, `extra[{title, blocks}]` (sections it couldn't map).
+Made by the board (Brief tab → Load a pack .docx), by `bun kit.ts sector pack.docx`, or by the `pack-to-sector` skill. Students read it, they don't edit it. Fields: `schema: "sector-pack/1"`, `id`, `name`, `referenceMarket`, `intro`, `definition`, `inside[]`, `outside[]`, `boundaryRows[{label, items}]` (other rows of the limits table, e.g. "Rules of the game"), `players[{type, howMoney, examples}]`, `revenueModels[]`, `valueChain{note, steps[{name, actors}], enablingLabel, enabling[]}`, `keyFigures[{level, figure, source}]`, `figuresNote`, `challenge`, `pestelNote`, `sprint2Questions[{dimension, question}]`, `glossary[{term, def}]`, `sources[{group, items[]}]`, `extra[{title, blocks}]` (sections it couldn't map).
 
 The pack gives a common starting point. **It doesn't choose the problem, customer, solution, technology or business model.** The team does.
 
